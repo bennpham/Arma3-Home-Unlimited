@@ -1,0 +1,31 @@
+if (isServer) then {
+	switch (_this select 0) do {
+		case 0: {pht6_parameter_spawnRange = 0}; 
+		case 1: {pht6_parameter_spawnRange = 100}; 
+        case 2: {pht6_parameter_spawnRange = 200}; 
+        case 3: {pht6_parameter_spawnRange = 300};
+        case 4: {pht6_parameter_spawnRange = 400};
+        case 5: {pht6_parameter_spawnRange = 500};
+        case 6: {pht6_parameter_spawnRange = 600};
+        case 7: {pht6_parameter_spawnRange = 700};
+        case 8: {pht6_parameter_spawnRange = 800};
+        case 9: {pht6_parameter_spawnRange = 900};
+        case 10: {pht6_parameter_spawnRange = 1000};
+        case 11: {pht6_parameter_spawnRange = 1100};
+        case 12: {pht6_parameter_spawnRange = 1200};
+        case 13: {pht6_parameter_spawnRange = 1300};
+        case 14: {pht6_parameter_spawnRange = 1400};
+        case 15: {pht6_parameter_spawnRange = 1500};
+        case 16: {pht6_parameter_spawnRange = 1600};
+        case 17: {pht6_parameter_spawnRange = 1700};
+        case 18: {pht6_parameter_spawnRange = 1800};
+        case 19: {pht6_parameter_spawnRange = 1900};
+        case 20: {pht6_parameter_spawnRange = 2000};
+        case 21: {pht6_parameter_spawnRange = 2100};
+        case 22: {pht6_parameter_spawnRange = 2200};
+        case 23: {pht6_parameter_spawnRange = 2300};
+        case 24: {pht6_parameter_spawnRange = 2400};
+        case 25: {pht6_parameter_spawnRange = 2500};
+	};
+	true;
+};

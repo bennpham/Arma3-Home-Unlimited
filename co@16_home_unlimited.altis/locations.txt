@@ -1,0 +1,20 @@
+Abdera								location_abdera
+Agios Dionysios						location_agios_dionysios
+Athira								location_athira
+Athira Factory						location_athira_factory
+Cap Strigla							location_cap_strigla
+Charkia								location_charkia
+Ghost Hotel							location_ghost_hotel_1
+Kastro Castle						location_kastro_castle
+Kavala								location_kavala
+Kavala Office Complex				location_kavala_office_complex
+Kavala Hospital						location_kavala_hospital
+Neochori							location_neochori
+Oreokastro Church					location_oreokastro_church
+Paros								location_paros
+Pyrgos								location_pyrgos
+Pyrgos Office Complex				location_pyrgos_office_complex
+Sofia								location_sofia
+Syrta								location_syrta
+Thronos								location_thronos
+Zaros Church					 	location_zaros_church

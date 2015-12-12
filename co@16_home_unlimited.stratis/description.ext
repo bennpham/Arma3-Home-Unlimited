@@ -1,0 +1,54 @@
+author = "Phantom Six";
+onLoadName = "Home Unlimited"; 
+onLoadMission = "Embrace yourselves... murderers are coming...";
+overviewText = "Defend your homes from murderers trying to barge into your home attempting to kill you and your family.";
+loadScreen = "loadScreen.jpg";
+overviewPicture = "loadScreen.jpg";
+debriefing = 1;
+
+respawn = "SIDE";
+respawnDelay = 5;
+aiKills = 1;
+
+doneKeys[] = {"co@16_home_unlimited_key"};
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1; 
+	maxPlayers = 16; 
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Failed";
+		subtitle = "Murdered";
+		description = "You, your family, and friends have all been murdered by the invaders...";
+		pictureBackground = "loadScreen.jpg";
+	};
+
+	class End2
+	{
+		title = "Mission Accomplished";
+		subtitle = "Survived";
+		description = "You and your families had survive the home invasions by crazy murderers trying to kill you for whatever reasons or bizarre agendas.";
+		pictureBackground = "loadScreen.jpg";
+	};
+};
+
+class CfgFunctions 
+{
+	#include "pht6_home\pht6_functions.hpp"
+	#include "debug\debug_functions.hpp"
+};
+
+class Params
+{
+	#include "pht6_home\paramDaytimeHour.hpp"
+	#include "pht6_home\paramWeather.hpp"
+	#include "pht6_home\paramHOsettings.hpp"
+	#include "pht6_home\loadout_player\paramPlayer.hpp"
+	#include "pht6_home\loadout_enemy\paramEnemy.hpp"
+};

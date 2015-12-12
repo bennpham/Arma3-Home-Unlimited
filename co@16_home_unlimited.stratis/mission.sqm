@@ -1,0 +1,2131 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_stratis",
+		"A3_Data_F_Curator_Characters",
+		"A3_Modules_F",
+		"A3_Misc_F_Helpers"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Data_F_Curator_Characters",
+		"A3_Misc_F_Helpers",
+		"a3_map_stratis"
+	};
+	randomSeed=5417849;
+	class Intel
+	{
+		briefingName="CO@16 Home Unlimited";
+		overviewText="Defend your homes from murderers trying to barge into your home attempting to kill you and your family.";
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		month=6;
+		day=12;
+		hour=0;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1683.936,5.5,5605.1045};
+					special="NONE";
+					id=0;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					text="p1";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude (Player Required)";
+				};
+				class Item1
+				{
+					position[]={1682.4634,5.5,5604.4248};
+					special="NONE";
+					id=1;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					text="p2";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item2
+				{
+					position[]={1683.8735,5.5,5603.96};
+					special="NONE";
+					id=2;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p3";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item3
+				{
+					position[]={1685.1978,5.5,5604.4639};
+					special="NONE";
+					id=3;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p4";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+			};
+		};
+		class Item1
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1683.9868,5.5,5601.835};
+					special="NONE";
+					id=4;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					text="p9";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item1
+				{
+					position[]={1682.6274,5.5,5600.9619};
+					special="NONE";
+					id=5;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					text="p10";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item2
+				{
+					position[]={1684.0181,5.5,5600.4443};
+					special="NONE";
+					id=6;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p11";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item3
+				{
+					position[]={1685.229,5.5,5600.8936};
+					special="NONE";
+					id=7;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p12";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1689.6157,5.5,5605.5264};
+					special="NONE";
+					id=8;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					text="p5";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item1
+				{
+					position[]={1688.4009,5.5,5604.7529};
+					special="NONE";
+					id=9;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					text="p6";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item2
+				{
+					position[]={1689.5884,5.5,5604.0693};
+					special="NONE";
+					id=10;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p7";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item3
+				{
+					position[]={1690.6509,5.5,5604.7725};
+					special="NONE";
+					id=11;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p8";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+			};
+		};
+		class Item3
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1689.5923,5.5,5602.0518};
+					special="NONE";
+					id=12;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					text="p13";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item1
+				{
+					position[]={1688.4907,5.5,5601.417};
+					special="NONE";
+					id=13;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					text="p14";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item2
+				{
+					position[]={1689.6587,5.5,5600.8662};
+					special="NONE";
+					id=14;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p15";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+				class Item3
+				{
+					position[]={1690.7603,5.5,5601.4365};
+					special="NONE";
+					id=15;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					skill=1;
+					text="p16";
+					init="[this, ""loadout\player.sqf""] call PHT6_fnc_safeAddLoadout;";
+					description="Some Dude";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=169;
+		class Item0
+		{
+			position[]={1908.4053,5.5386572,5715.5288};
+			id=16;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_1";
+			init="this setPosASL [1904.44,5712.93,14.7636]; this setDir 102.072; ";
+		};
+		class Item1
+		{
+			position[]={1948.573,5.5826101,5702.752};
+			id=17;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_2";
+			init="this setPosASL [1951.72,5706.75,6.16699]; this setDir 100.277;";
+		};
+		class Item2
+		{
+			position[]={1961.3024,5.6832557,5710.7354};
+			id=18;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_3";
+			init="this setPosASL [1969.48,5707.99,6.16699]; this setDir 191.645; ";
+		};
+		class Item3
+		{
+			position[]={1919.6942,5.6816487,5736.9653};
+			id=19;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_4";
+			init="this setPosASL [1918.37,5729.62,6.1951]; this setDir 15.032; ";
+		};
+		class Item4
+		{
+			position[]={1931.2837,5.6900001,5747.9893};
+			id=20;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_5";
+			init="this setPosASL [1917.4,5749.65,6.1963]; this setDir 197.014; ";
+		};
+		class Item5
+		{
+			position[]={2055.2129,5.603601,5719.0791};
+			id=21;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_6";
+			init="this setPosASL [2050.14,5701.59,6.29425]; this setDir 0.707874; ";
+		};
+		class Item6
+		{
+			position[]={2104.7637,4.3134422,5843.1387};
+			id=22;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_7";
+			init="this setPosASL [2103.01,5853.05,4.49751]; this setDir 190.026;";
+		};
+		class Item7
+		{
+			position[]={2106.3101,4.1799998,5857.0601};
+			id=23;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_8";
+			init="this setPosASL [2101.07,5866.02,4.50051]; this setDir 188.16; ";
+		};
+		class Item8
+		{
+			position[]={2233.104,5.9881358,5763.8208};
+			id=24;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_9";
+			init="this setPosASL [2236.28,5760.03,6.49326]; this setDir 284.304; ";
+		};
+		class Item9
+		{
+			position[]={2246.5527,6,5756.0024};
+			id=25;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_10";
+			init="this setPosASL [2250.73,5761.8,6.49326]; this setDir 284.94;";
+		};
+		class Item10
+		{
+			position[]={2221.1091,6,5728.5479};
+			id=26;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_11";
+			init="this setPosASL [2229.53,5715.01,6.04615]; this setDir 284.791; ";
+		};
+		class Item11
+		{
+			position[]={2227.1067,6,5714.3662};
+			id=27;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_12";
+			init="this setPosASL [2210.23,5714.22,6.04615]; this setDir 105.552; ";
+		};
+		class Item12
+		{
+			position[]={2163.4976,6,5611.458};
+			id=28;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_13";
+			init="this setPosASL [2159.58,5604.15,6.60312]; this setDir 0.117693; ";
+		};
+		class Item13
+		{
+			position[]={2196.0291,6.1202178,5598.1855};
+			id=29;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_14";
+			init="this setPosASL [2187.87,5600.35,6.78476]; this setDir 100.99;";
+		};
+		class Item14
+		{
+			position[]={2074.3879,6.6145139,5504.3213};
+			id=30;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_15";
+			init="this setPosASL [2056.51,5502.64,7.38314]; this setDir 110.774; ";
+		};
+		class Item15
+		{
+			position[]={2204.4177,6.6641235,5502.4316};
+			id=31;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_16";
+			init="this setPosASL [2179.63,5514.34,7.4057]; this setDir 181.155;";
+		};
+		class Item16
+		{
+			position[]={2166.3218,8.6946707,5392.1904};
+			id=32;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_17";
+			init="this setPosASL [2147.15,5395.82,9.43913]; this setDir 86.6507; ";
+		};
+		class Item17
+		{
+			position[]={2163.1736,8.7299995,5364.1572};
+			id=33;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_18";
+			init="this setPosASL [2146.26,5340.95,9.47487]; this setDir 0.640266; ";
+		};
+		class Item18
+		{
+			position[]={2025.4495,3,5343.1533};
+			id=34;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_19";
+			init="this setPosASL [2026.8,5341.3,3.13198]; this setDir 283.325; ";
+		};
+		class Item19
+		{
+			position[]={2035.9502,3,5333.4951};
+			id=35;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_20";
+			init="this setPosASL [2039.51,5342.77,3.12577]; this setDir 276.844;";
+		};
+		class Item20
+		{
+			position[]={2442.7041,74.121147,5694.6797};
+			id=36;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_21";
+			init="this setPosASL [2436.6,5694.02,74.7142]; this setDir 109.319; ";
+		};
+		class Item21
+		{
+			position[]={2571.0544,82.408966,5492.2168};
+			id=37;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_22";
+			init="this setPosASL [2568.18,5491.46,83.1213]; this setDir 95.9593; ";
+		};
+		class Item22
+		{
+			position[]={2557.8406,81.320885,5506.8154};
+			id=38;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_23";
+			init="this setPosASL [2556.43,5509.63,81.5167]; this setDir 200.361; ";
+		};
+		class Item23
+		{
+			position[]={2762.5771,3.8535619,5751.5674};
+			id=39;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_24";
+			init="this setPosASL [2766.85,5748.67,4.25658]; this setDir 334.116;";
+		};
+		class Item24
+		{
+			position[]={2583.5447,110.24081,4900.6592};
+			id=40;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_25";
+			init="this setPosASL [2585.76,4891.53,110.327]; this setDir 65.287;";
+		};
+		class Item25
+		{
+			position[]={4333.9155,177.34015,4365.8584};
+			id=41;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_26";
+			init="this setPosASL [4307.97,4346.82,177.519]; this setDir 118.894; ";
+		};
+		class Item26
+		{
+			position[]={4350.7637,177.35101,4359.5972};
+			id=42;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_27";
+			init="this setPosASL [4312.49,4353.25,180.29]; this setDir 289.338; ";
+		};
+		class Item27
+		{
+			position[]={4242.1968,145.65839,4232.0859};
+			id=43;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_28";
+			init="this setPosASL [4237.67,4233.55,146.096]; this setDir 97.9212; ";
+		};
+		class Item28
+		{
+			position[]={4321.7363,234.22,3872.4971};
+			id=44;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_29";
+			init="this setPosASL [4325.71,3868.49,234.909]; this setDir 0.900786; ";
+		};
+		class Item29
+		{
+			position[]={4317.9038,234.22,3905.9419};
+			id=45;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_30";
+			init="this setPosASL [4320.37,3907.79,234.579]; this setDir 175.391; ";
+		};
+		class Item30
+		{
+			position[]={4340.6875,226.50095,3824.7783};
+			id=46;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_31";
+			init="this setPosASL [4337.85,3807.75,226.762]; this setDir 359.074; ";
+		};
+		class Item31
+		{
+			position[]={4343.0298,226.18951,3811.145};
+			id=47;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_32";
+			init="this setPosASL [4331.16,3826.29,226.766]; this setDir 177.091; ";
+		};
+		class Item32
+		{
+			position[]={4350.9082,224.1994,3757.2495};
+			id=48;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_33";
+			init="this setPosASL [4340.88,3754.86,224.666]; this setDir 40.4532; ";
+		};
+		class Item33
+		{
+			position[]={4385.6167,226.07294,3772.8003};
+			id=49;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_34";
+			init="this setPosASL [4378.07,3774.41,226.639]; this setDir 83; ";
+		};
+		class Item34
+		{
+			position[]={2096.4133,36.368065,3430.7251};
+			id=50;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_35";
+			init="this setPosASL [2096.87,3417.41,37.656]; this setDir 0.884563; ";
+		};
+		class Item35
+		{
+			position[]={1996.7617,2.5425293,3516.2432};
+			id=51;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_36";
+			init="this setPosASL [1999.87,3514.55,3.37013]; this setDir 0.783798; ";
+		};
+		class Item36
+		{
+			position[]={1969.8163,2.2478728,3509.5039};
+			id=52;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_38";
+			init="this setPosASL [1969.22,3502.11,2.74514]; this setDir 344.821; ";
+		};
+		class Item37
+		{
+			position[]={1913.3702,1.5771279,3546.2212};
+			id=53;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_39";
+			init="this setPosASL [1907.9,3575.95,3.23537]; this setDir 169.018; ";
+		};
+		class Item38
+		{
+			position[]={3674.2959,156.43571,2874.3188};
+			id=54;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_40";
+			init="this setPosASL [3674.49,2870.37,156.715]; this setDir 311.257; ";
+		};
+		class Item39
+		{
+			position[]={3684.0356,156.59253,2880.6128};
+			id=55;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_41";
+			init="this setPosASL [3681.01,2877.31,159.979]; this setDir 306.944; ";
+		};
+		class Item40
+		{
+			position[]={3701.1807,156.3262,2875.6387};
+			id=56;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_42";
+			init="this setPosASL [3697.11,2875.08,156.624]; this setDir 145.034;";
+		};
+		class Item41
+		{
+			position[]={3274.4753,229.1555,2952.6221};
+			id=57;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_43";
+			init="this setPosASL [3266.44,2946.35,229.764]; this setDir 50.4763;";
+		};
+		class Item42
+		{
+			position[]={3311.2795,229.16861,2919.1631};
+			id=58;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_44";
+			init="this setPosASL [3313.22,2919.67,229.617]; this setDir 283.775; ";
+		};
+		class Item43
+		{
+			position[]={3391.76,213.17261,2988.9839};
+			id=59;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_45";
+			init="this setPosASL [3387.08,2984.07,213.996]; this setDir 0.431697; ";
+		};
+		class Item44
+		{
+			position[]={1876.317,14.058125,2758.9375};
+			id=60;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_46";
+			init="this setPosASL [1873.96,2752.87,14.3273]; this setDir 72.2716; ";
+		};
+		class Item45
+		{
+			position[]={1874.9004,13.947554,2746.3926};
+			id=61;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_47";
+			init="this setPosASL [1875.56,2744.33,17.5836]; this setDir 75.7839;";
+		};
+		class Item46
+		{
+			position[]={1964.205,3.547477,2743.8306};
+			id=62;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_48";
+			init="this setPosASL [1961.62,2744.61,8.3068]; this setDir 211.844; ";
+		};
+		class Item47
+		{
+			position[]={1985.2494,8.5479975,2766.4878};
+			id=63;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_49";
+			init="this setPosASL [1995.98,2762.76,9.73112]; this setDir 40.0222; ";
+		};
+		class Item48
+		{
+			position[]={2040.0477,5.4598069,2767.4141};
+			id=64;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_50";
+			init="this setPosASL [2037.13,2765.51,6.50171]; this setDir 330.052; ";
+		};
+		class Item49
+		{
+			position[]={2006.0454,2.9756336,2720.8311};
+			id=65;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_51";
+			init="this setPosASL [2002.8,2713.86,6.6326]; this setDir 359.49;";
+		};
+		class Item50
+		{
+			position[]={2013.6127,2.8626251,2732.0459};
+			id=66;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_52";
+			init="this setPosASL [2007.23,2722.8,3.37512]; this setDir 21.5742; ";
+		};
+		class Item51
+		{
+			position[]={2047.244,3.2790778,2738.4951};
+			id=67;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_53";
+			init="this setPosASL [2041.15,2735.09,3.73857]; this setDir 34.2817; ";
+		};
+		class Item52
+		{
+			position[]={2085.2197,7.5422392,2732.3267};
+			id=68;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_58";
+			init="this setPosASL [2082.67,2727.7,11.0013]; this setDir 229.107; ";
+		};
+		class Item53
+		{
+			position[]={2042.6198,3.5530434,2725.0366};
+			id=69;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_54";
+			init="this setPosASL [2035.2,2718.42,4.0696]; this setDir 126.546; ";
+		};
+		class Item54
+		{
+			position[]={2040.7981,4.365387,2707.2319};
+			id=70;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_55";
+			init="this setPosASL [2037.8,2704.03,8.62781]; this setDir 37.8177; ";
+		};
+		class Item55
+		{
+			position[]={2050.1868,7.7478256,2684.3809};
+			id=71;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_56";
+			init="this setPosASL [2048.11,2680.49,8.47359]; this setDir 123.971; ";
+		};
+		class Item56
+		{
+			position[]={2070.9265,7.3419456,2707.3726};
+			id=72;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_57";
+			init="this setPosASL [2066.3,2702.89,7.74733]; this setDir 39.1001; ";
+		};
+		class Item57
+		{
+			position[]={2020.3389,5.6370826,2668.96};
+			id=73;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_59";
+			init="this setPosASL [2009.28,2662.01,6.40021]; this setDir 61.3669;";
+		};
+		class Item58
+		{
+			position[]={2003.1025,7.8123479,2663.9131};
+			id=74;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_60";
+			init="this setPosASL [2001.26,2656.03,8.52031]; this setDir 63.0093;";
+		};
+		class Item59
+		{
+			position[]={2417.3359,3.3975391,1170.7354};
+			id=75;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_61";
+			init="this setPosASL [2412.05,1174.06,3.89084]; this setDir 161.141; ";
+		};
+		class Item60
+		{
+			position[]={2434.1829,3.8310616,1108.6426};
+			id=76;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_62";
+			init="this setPosASL [2435.32,1110.3,4.01233]; this setDir 258.936; ";
+		};
+		class Item61
+		{
+			position[]={2438.1707,4.8960886,819.89551};
+			id=77;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_63";
+			init="this setPosASL [2438.82,818.969,5.2257]; this setDir 270.294; ";
+		};
+		class Item62
+		{
+			position[]={2672.3726,18.718498,1281.998};
+			id=78;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_64";
+			init="this setPosASL [2675.08,1275.53,18.5211]; this setDir 158.956; ";
+		};
+		class Item63
+		{
+			position[]={2762.5281,142.91148,1735.6504};
+			id=79;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_65";
+			init="this setPosASL [2764,1732.33,143.265]; this setDir 40.4488; ";
+		};
+		class Item64
+		{
+			position[]={2763.2578,143.81952,1757.3613};
+			id=80;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_66";
+			init="this setPosASL [2764.87,1756.42,147.282]; this setDir 304.68;";
+		};
+		class Item65
+		{
+			position[]={2790.9778,143.37733,1743.1309};
+			id=81;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_67";
+			init="this setPosASL [2795.3,1740.45,143.669]; this setDir 328.544; ";
+		};
+		class Item66
+		{
+			position[]={3053.825,167.39142,2156.1367};
+			id=82;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_68";
+			init="this setPosASL [3049.66,2154.23,167.555]; this setDir 126.846; ";
+		};
+		class Item67
+		{
+			position[]={3078.4241,167.19424,2170.0605};
+			id=83;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_69";
+			init="this setPosASL [3079.87,2171.94,167.462]; this setDir 213.426;";
+		};
+		class Item68
+		{
+			position[]={3095.2546,169.14876,2129.585};
+			id=84;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_70";
+			init="this setPosASL [3092.07,2131.51,169.332]; this setDir 218.48;";
+		};
+		class Item69
+		{
+			position[]={2710.4656,0.75044125,6059.855};
+			id=85;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_71";
+			init="this setPosASL [2702.58,6052.32,2.12415]; this setDir 40.2976; ";
+		};
+		class Item70
+		{
+			position[]={2821.7251,4.3998532,6131.9131};
+			id=86;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_72";
+			init="this setPosASL [2822.31,6128.33,4.48968]; this setDir 180.74; ";
+		};
+		class Item71
+		{
+			position[]={2843.3127,2.7086713,6114.4697};
+			id=87;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_73";
+			init="this setPosASL [2849.23,6106.47,7.08321]; this setDir 208.59; ";
+		};
+		class Item72
+		{
+			position[]={2865.5229,2.7121205,6101.8022};
+			id=88;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_74";
+			init="this setPosASL [2870.74,6102.95,6.51619]; this setDir 185.035; ";
+		};
+		class Item73
+		{
+			position[]={2847.2561,2.1711726,6082.6968};
+			id=89;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_75";
+			init="this setPosASL [2840.95,6075.73,5.76929]; this setDir 0.104695;";
+		};
+		class Item74
+		{
+			position[]={2888.1484,2.7185156,6088.0957};
+			id=90;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_76";
+			init="this setPosASL [2890.87,6077.98,7.58108]; this setDir 299.509;";
+		};
+		class Item75
+		{
+			position[]={2905.1694,7.6700892,6111.355};
+			id=91;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_77";
+			init="this setPosASL [2906.68,6109.25,11.177]; this setDir 201.149; ";
+		};
+		class Item76
+		{
+			position[]={2879.4304,11.129228,6131.7061};
+			id=92;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_78";
+			init="this setPosASL [2880.15,6125.35,11.2474]; this setDir 0.116821; ";
+		};
+		class Item77
+		{
+			position[]={2896.8669,16.03968,6151.2256};
+			id=93;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_79";
+			init="this setPosASL [2897.9,6148.83,16.2977]; this setDir 160.356; ";
+		};
+		class Item78
+		{
+			position[]={2941.4951,18.960737,6150.395};
+			id=94;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_80";
+			init="this setPosASL [2938.44,6147.3,19.1196]; this setDir 179.783; ";
+		};
+		class Item79
+		{
+			position[]={2941.4951,10.188724,6121.1147};
+			id=95;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_81";
+			init="this setPosASL [2939.06,6119.96,14.0992]; this setDir 108.206; ";
+		};
+		class Item80
+		{
+			position[]={2961.4216,12.445326,6121.5303};
+			id=96;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_82";
+			init="this setPosASL [2961.86,6123.48,13.0194]; this setDir 125.149; ";
+		};
+		class Item81
+		{
+			position[]={2974.2913,7.5325398,6096.6113};
+			id=97;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_83";
+			init="this setPosASL [2969.54,6097.95,7.82964]; this setDir 197.892; ";
+		};
+		class Item82
+		{
+			position[]={3004.8044,10.133989,6088.7197};
+			id=98;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_84";
+			init="this setPosASL [3002.71,6083.37,13.5428]; this setDir 46.6258; ";
+		};
+		class Item83
+		{
+			position[]={3051.3013,12.038253,6089.3438};
+			id=99;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_85";
+			init="this setPosASL [3053.1,6092.2,15.7083]; this setDir 180.627; ";
+		};
+		class Item84
+		{
+			position[]={3053.5847,19.28861,6139.3901};
+			id=100;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_86";
+			init="this setPosASL [3055.93,6126.15,22.3558]; this setDir 132.326; ";
+		};
+		class Item85
+		{
+			position[]={3040.7146,27.357304,6188.606};
+			id=101;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_87";
+			init="this setPosASL [3041.2,6178.24,27.0342]; this setDir 0.173496; ";
+		};
+		class Item86
+		{
+			position[]={3383.9556,5.4942484,6067.667};
+			id=102;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_88";
+			init="this setPosASL [3370.66,6065.75,6.04428]; this setDir 0.306148;";
+		};
+		class Item87
+		{
+			position[]={3411.0579,5.3163843,6045.6025};
+			id=103;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_89";
+			init="this setPosASL [3406.63,6038.8,5.55994]; this setDir 0.599478; ";
+		};
+		class Item88
+		{
+			position[]={3215.4246,4.8745813,5816.5083};
+			id=104;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_90";
+			init="this setPosASL [3219.72,5805.58,5.41139]; this setDir 33.0322; ";
+		};
+		class Item89
+		{
+			position[]={3215.7629,4.9053741,5801.6133};
+			id=105;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_91";
+			init="this setPosASL [3214.74,5791.31,5.41625]; this setDir 31.3204; ";
+		};
+		class Item90
+		{
+			position[]={3251.2908,4.3039966,5837.4951};
+			id=106;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_92";
+			init="this setPosASL [3252.41,5837.49,4.80858]; this setDir 180.236; ";
+		};
+		class Item91
+		{
+			position[]={3121.8628,3.1790223,5870.2563};
+			id=107;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_93";
+			init="this setPosASL [3125.32,5864.49,6.77522]; this setDir 204.119; ";
+		};
+		class Item92
+		{
+			position[]={3104.197,3.8602037,5861.1152};
+			id=108;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_94";
+			init="this setPosASL [3106.55,5856.62,4.18348]; this setDir 111.162; ";
+		};
+		class Item93
+		{
+			position[]={3139.8337,3.3499999,5917.792};
+			id=109;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_95";
+			init="this setPosASL [3144.89,5910.23,3.54718]; this setDir 45.176; ";
+		};
+		class Item94
+		{
+			position[]={3118.2083,3.3499999,5971.1182};
+			id=110;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_96";
+			init="this setPosASL [3123.39,5967.26,7.28232]; this setDir 315.082; ";
+		};
+		class Item95
+		{
+			position[]={3092.6228,3.6196532,5989.7051};
+			id=111;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_97";
+			init="this setPosASL [3102.47,5982.8,4.00129]; this setDir 311.887; ";
+		};
+		class Item96
+		{
+			position[]={3071.6062,2.9224837,5926.6289};
+			id=112;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_98";
+			init="this setPosASL [3073.65,5921.86,3.10982]; this setDir 120.044; ";
+		};
+		class Item97
+		{
+			position[]={3033.8376,3.9255579,5898.2905};
+			id=113;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_99";
+			init="this setPosASL [3040.35,5894.93,4.31167]; this setDir 271.165; ";
+		};
+		class Item98
+		{
+			position[]={2969.2651,5.7203221,5861.4189};
+			id=114;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_100";
+			init="this setPosASL [2971.85,5853.77,5.99657]; this setDir 123.163; ";
+		};
+		class Item99
+		{
+			position[]={3011.9072,2.8372703,5907.4316};
+			id=115;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_101";
+			init="this setPosASL [3012.11,5907.57,3.45093]; this setDir 100.832; ";
+		};
+		class Item100
+		{
+			position[]={3023.7861,2.8045251,5931.1997};
+			id=116;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_102";
+			init="this setPosASL [3023.75,5932.55,2.95606]; this setDir 130.336; ";
+		};
+		class Item101
+		{
+			position[]={3011.2981,3.49,5952.8345};
+			id=117;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_103";
+			init="this setPosASL [3013.7,5950.33,3.71908]; this setDir 1.80967; ";
+		};
+		class Item102
+		{
+			position[]={2972.9202,3.49,5956.4912};
+			id=118;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_104";
+			init="this setPosASL [2973.57,5953.44,7.41268]; this setDir 15.001; ";
+		};
+		class Item103
+		{
+			position[]={2947.6401,3.4784243,5941.8647};
+			id=119;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_105";
+			init="this setPosASL [2952.44,5933.35,6.49205]; this setDir 11.5507; ";
+		};
+		class Item104
+		{
+			position[]={2965.0012,3.4474969,5922.3628};
+			id=120;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_106";
+			init="this setPosASL [2966.93,5917.25,7.33013]; this setDir 100.434; ";
+		};
+		class Item105
+		{
+			position[]={2936.9792,3.4300001,5919.9248};
+			id=121;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_107";
+			init="this setPosASL [2938.45,5918.91,3.74402]; this setDir 275.467; ";
+		};
+		class Item106
+		{
+			position[]={2842.5574,8.4068193,5893.4141};
+			id=122;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_108";
+			init="this setPosASL [2849.58,5888.29,8.95212]; this setDir 245.576;";
+		};
+		class Item107
+		{
+			position[]={2853.5864,2.5392089,5942.5479};
+			id=123;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_109";
+			init="this setPosASL [2859.06,5940,3.16568]; this setDir 191.374; ";
+		};
+		class Item108
+		{
+			position[]={2867.8052,3.0168176,5933.0649};
+			id=124;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_110";
+			init="this setPosASL [2866.57,5925.18,2.98587]; this setDir 0.999106; ";
+		};
+		class Item109
+		{
+			position[]={2866.1323,3.0598524,5955.9355};
+			id=125;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_111";
+			init="this setPosASL [2871.79,5948.12,3.6299]; this setDir 23.9934; ";
+		};
+		class Item110
+		{
+			position[]={2890.6665,3.3333325,5947.0103};
+			id=126;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_112";
+			init="this setPosASL [2892.08,5944.27,7.28423]; this setDir 115.505;";
+		};
+		class Item111
+		{
+			position[]={2909.0674,3.4841564,5940.5952};
+			id=127;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_113";
+			init="this setPosASL [2904.01,5931.84,3.89825]; this setDir 0.901926; ";
+		};
+		class Item112
+		{
+			position[]={2907.3943,3.405226,5919.9561};
+			id=128;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_114";
+			init="this setPosASL [2912.7,5914.66,6.99684]; this setDir 0.368976; ";
+		};
+		class Item113
+		{
+			position[]={2931.0925,3.49,5963.188};
+			id=129;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_115";
+			init="this setPosASL [2935.66,5963.64,3.59788]; this setDir 200.011; ";
+		};
+		class Item114
+		{
+			position[]={2911.019,3.49,5972.6709};
+			id=130;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_116";
+			init="this setPosASL [2912.96,5964.71,3.61371]; this setDir 301.676; ";
+		};
+		class Item115
+		{
+			position[]={2890.9451,3.49,5989.1274};
+			id=131;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_117";
+			init="this setPosASL [2901.35,5984.57,3.55347]; this setDir 297.93; ";
+		};
+		class Item116
+		{
+			position[]={2880.3511,3.2717555,6007.2563};
+			id=132;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_118";
+			init="this setPosASL [2883.54,6001.56,7.0661]; this setDir 105.853; ";
+		};
+		class Item117
+		{
+			position[]={2922.0959,3.3499999,6034.001};
+			id=133;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_119";
+			init="this setPosASL [2918.17,6036.13,3.52644]; this setDir 295.833; ";
+		};
+		class Item118
+		{
+			position[]={2922.782,3.4453835,6064.2046};
+			id=134;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_120";
+			init="this setPosASL [2912.15,6066.09,7.87118]; this setDir 0.984689; ";
+		};
+		class Item119
+		{
+			position[]={2942.9092,3.3855541,6057.1113};
+			id=135;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_121";
+			init="this setPosASL [2930.86,6062.01,3.62204]; this setDir 295.062; ";
+		};
+		class Item120
+		{
+			position[]={2927.5852,5.9250245,6088.9165};
+			id=136;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_122";
+			init="this setPosASL [2921.55,6088.16,10.4766]; this setDir 120.346; ";
+		};
+		class Item121
+		{
+			position[]={2984.7642,6.5963306,6065.5776};
+			id=137;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_123";
+			init="this setPosASL [2986.35,6062.12,7.9333]; this setDir 0.9989;";
+		};
+		class Item122
+		{
+			position[]={2952.7231,3.3499999,6015.7041};
+			id=138;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_124";
+			init="this setPosASL [2950.13,6016.82,7.62799]; this setDir 208.834; ";
+		};
+		class Item123
+		{
+			position[]={2966.6741,3.3499999,6028.3247};
+			id=139;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_125";
+			init="this setPosASL [2965.55,6028.83,3.59919]; this setDir 291.244; ";
+		};
+		class Item124
+		{
+			position[]={3002.2925,3.3499999,6014.665};
+			id=140;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_126";
+			init="this setPosASL [3001.43,6008.79,7.73523]; this setDir 0.859537; ";
+		};
+		class Item125
+		{
+			position[]={3023.3701,3.660758,6044.1382};
+			id=141;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_127";
+			init="this setPosASL [3022.09,6039.08,3.84219]; this setDir 0.16382; ";
+		};
+		class Item126
+		{
+			position[]={3044.3604,4.6416626,6049.5659};
+			id=142;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_128";
+			init="this setPosASL [3037.92,6047.25,5.00377]; this setDir 175.134; ";
+		};
+		class Item127
+		{
+			position[]={3070.509,4.883265,6052.0576};
+			id=143;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_129";
+			init="this setPosASL [3065.79,6050.8,5.2583]; this setDir 176.053; ";
+		};
+		class Item128
+		{
+			position[]={3089.187,4.8522582,6051.6128};
+			id=144;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_130";
+			init="this setPosASL [3084.22,6051.25,5.17966]; this setDir 174.652; ";
+		};
+		class Item129
+		{
+			position[]={3118.5378,5.0600767,6049.4771};
+			id=145;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_131";
+			init="this setPosASL [3115.27,6050.21,5.44183]; this setDir 260.674; ";
+		};
+		class Item130
+		{
+			position[]={3154.6482,7.5499854,6059.6211};
+			id=146;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_132";
+			init="this setPosASL [3152.41,6061.14,8.14784]; this setDir 240.01; ";
+		};
+		class Item131
+		{
+			position[]={3118.7158,4.2444286,6026.3423};
+			id=147;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_133";
+			init="this setPosASL [3117.12,6021.85,4.55104]; this setDir 0.493933;";
+		};
+		class Item132
+		{
+			position[]={3101.9946,3.9834766,6021.6265};
+			id=148;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_134";
+			init="this setPosASL [3102.64,6015.93,4.26887]; this setDir 0.807065; ";
+		};
+		class Item133
+		{
+			position[]={3084.562,4.1139717,6019.7583};
+			id=149;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_135";
+			init="this setPosASL [3084.65,6014.67,4.44222]; this setDir 0.229509; ";
+		};
+		class Item134
+		{
+			position[]={3058.8579,4.2916698,6023.8511};
+			id=150;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_136";
+			init="this setPosASL [3057.62,6021.53,8.17511]; this setDir 180.643; ";
+		};
+		class Item135
+		{
+			position[]={3040.625,3.3827162,6017.7114};
+			id=151;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_137";
+			init="this setPosASL [3041.59,6013,3.69814]; this setDir 0.665553; ";
+		};
+		class Item136
+		{
+			position[]={3042.6707,3.3580132,5996.5347};
+			id=152;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_138";
+			init="this setPosASL [3040.66,5991.02,7.48349]; this setDir 260.098; ";
+		};
+		class Item137
+		{
+			position[]={4809.873,192.76659,4411.4966};
+			id=153;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_139";
+			init="this setPosASL [4807.92,4409.81,192.88]; this setDir 161.51; ";
+		};
+		class Item138
+		{
+			position[]={5072.4663,173.55685,4326.5991};
+			id=154;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_140";
+			init="this setPosASL [5074.47,4316.58,173.436]; this setDir 358.88; ";
+		};
+		class Item139
+		{
+			position[]={5306.5088,94.940369,4196.9883};
+			id=155;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_141";
+			init="this setPosASL [5305.28,4192.54,95.2944]; this setDir 75.2144; ";
+		};
+		class Item140
+		{
+			position[]={5426.7178,7.9300418,3799.8799};
+			id=156;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_142";
+			init="this setPosASL [5448.77,3809.52,9.05948]; this setDir 232.935; ";
+		};
+		class Item141
+		{
+			position[]={6530.5464,4.0716953,4936.9917};
+			id=157;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_143";
+			init="this setPosASL [6532.07,4936.53,4.02242]; this setDir 180.512; ";
+		};
+		class Item142
+		{
+			position[]={5208.8218,223.03613,4997.3799};
+			id=158;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_144";
+			init="this setPosASL [5209.58,4992.25,223.082]; this setDir 335.642; ";
+		};
+		class Item143
+		{
+			position[]={4961.7944,153.98508,5428.8149};
+			id=159;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_145";
+			init="this setPosASL [4967.31,5427.89,154.427]; this setDir 175.094; ";
+		};
+		class Item144
+		{
+			position[]={4117.75,9.1002493,7474.9575};
+			id=160;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_147";
+			init="this setPosASL [4118.43,7471.4,9.5883]; this setDir 348.556; ";
+		};
+		class Item145
+		{
+			position[]={3607.7292,45.423401,6776.1157};
+			id=161;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_148";
+			init="this setPosASL [3611.25,6771.57,46.1454]; this setDir 160.944; ";
+		};
+		class Item146
+		{
+			position[]={4483.4551,104.8185,6804.0137};
+			id=162;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_149";
+			init="this setPosASL [4480.73,6803.63,104.817]; this setDir 85.2455; ";
+		};
+		class Item147
+		{
+			position[]={4511.894,104.71823,6804.4204};
+			id=163;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_150";
+			init="this setPosASL [4509.33,6801.74,106.127]; this setDir 180.964; ";
+		};
+		class Item148
+		{
+			position[]={6561.1924,48.50523,5054.2554};
+			id=164;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_157";
+			init="this setPosASL [6561.43,5040.13,49.5709]; this setDir 310.793; ";
+		};
+		class Item149
+		{
+			position[]={6572.9512,60.622948,5100.333};
+			id=165;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_158";
+			init="this setPosASL [6579.5,5091.46,60.8782]; this setDir 0.893846; ";
+		};
+		class Item150
+		{
+			position[]={6579.1577,79.96064,5200.9829};
+			id=166;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_159";
+			init="this setPosASL [6587.47,5197.99,81.2767]; this setDir 180.394; ";
+		};
+		class Item151
+		{
+			position[]={6594.3022,24.263147,5319.4224};
+			id=167;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_160";
+			init="this setPosASL [6596.53,5315.65,25.5617]; this setDir 0.973779; ";
+		};
+		class Item152
+		{
+			position[]={6589.9106,24.395626,5342.2725};
+			id=168;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_161";
+			init="this setPosASL [6588.08,5343.17,24.6455]; this setDir 165.102; ";
+		};
+		class Item153
+		{
+			position[]={6457.6338,7.9218307,5384.3003};
+			id=169;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_162";
+			init="this setPosASL [6455.6,5389.65,8.02128]; this setDir 215.64; ";
+		};
+		class Item154
+		{
+			position[]={6441.9741,13.630981,5370.9375};
+			id=170;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_163";
+			init="this setPosASL [6448.1,5374.58,8.02645]; this setDir 215.212; ";
+		};
+		class Item155
+		{
+			position[]={6047.3809,18.352264,5586.0479};
+			id=171;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_164";
+			init="this setPosASL [6044.44,5582.63,18.5327]; this setDir 30.1114; ";
+		};
+		class Item156
+		{
+			position[]={6041.355,18.38707,5615.9956};
+			id=172;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_165";
+			init="this setPosASL [6041.11,5614.64,21.4603]; this setDir 203.326; ";
+		};
+		class Item157
+		{
+			position[]={6037.8555,17.467134,5631.748};
+			id=173;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_166";
+			init="this setPosASL [6037.01,5624.8,17.9493]; this setDir 111.285; ";
+		};
+		class Item158
+		{
+			position[]={6074.9849,18.46142,5611.7178};
+			id=174;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_167";
+			init="this setPosASL [6073.11,5607.8,18.9474]; this setDir 126.197; ";
+		};
+		class Item159
+		{
+			position[]={6088.98,17.521187,5644.3892};
+			id=175;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_168";
+			init="this setPosASL [6090.19,5639.81,18.474]; this setDir 292.139; ";
+		};
+		class Item160
+		{
+			position[]={6058.4604,16.423315,5660.3364};
+			id=176;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_169";
+			init="this setPosASL [6065.81,5653.52,17.4572]; this setDir 200.74; ";
+		};
+		class Item161
+		{
+			position[]={5034.1089,208.80743,5879.7065};
+			id=177;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_153";
+			init="this setPosASL [5038.27,5874.85,209.556]; this setDir 270.049; ";
+		};
+		class Item162
+		{
+			position[]={5002.3857,207.49776,5875.6558};
+			id=178;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_152";
+			init="this setPosASL [5003.72,5868.38,208.107]; this setDir 0.574407; ";
+		};
+		class Item163
+		{
+			position[]={4991.4175,207.1179,5874.98};
+			id=179;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_151";
+			init="this setPosASL [4992.39,5868.15,207.678]; this setDir 0.75005; ";
+		};
+		class Item164
+		{
+			position[]={5004.0728,207.92137,5895.0688};
+			id=180;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_154";
+			init="this setPosASL [5005.17,5886.48,208.557]; this setDir 0.557003; ";
+		};
+		class Item165
+		{
+			position[]={4990.2358,207.72081,5895.4067};
+			id=181;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_155";
+			init="this setPosASL [4990.3,5889.54,208.396]; this setDir 90.2152; ";
+		};
+		class Item166
+		{
+			position[]={4985.0044,208.43413,5921.9106};
+			id=182;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_156";
+			init="this setPosASL [4982.21,5918.45,209.105]; this setDir 55.7409; ";
+		};
+		class Item167
+		{
+			position[]={4951.4058,157.23662,5409.7969};
+			id=183;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_146";
+			init="this setPosASL [4951.82,5406.76,153.537]; this setDir 27.1772;";
+		};
+		class Item168
+		{
+			position[]={1994.6711,2.8166442,3536.4609};
+			id=184;
+			side="EMPTY";
+			vehicle="Sign_Sphere10cm_F";
+			skill=0.60000002;
+			text="location_37";
+			init="this setPosASL [1992.82,3537.88,3.36599]; this setDir 176.082;";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={1685.5747,5.5,5611.6143};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			text="MISSION FAIL! All players dead";
+			expCond="!alive p1 && !alive p2 && !alive p3 && !alive p4 && !alive p5 && !alive p6 && !alive p7 && !alive p8 && !alive p9 && !alive p10 && !alive p11 && !alive p12 && !alive p13 && !alive p14 && !alive p15 && !alive p16";
+			expActiv="[""end1"",false] call bis_fnc_endMission;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={1681.1685,5.5,5611.2607};
+			a=999999;
+			b=999999;
+			rectangular=1;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			timeoutMin=3;
+			timeoutMid=3;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			text="No Enemies Left Task Complete";
+			expActiv="[""task1"", ""succeeded""] call FHQ_TT_setTaskState;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={1690.5923,5.5,5611.7686};
+			a=0;
+			b=0;
+			timeoutMin=5;
+			timeoutMid=5;
+			timeoutMax=5;
+			interruptable=1;
+			age="UNKNOWN";
+			text="VICTORY";
+			expCond="[""task1""] call FHQ_TT_isTaskSuccessful";
+			expActiv="""end2"" call bis_fnc_endMission; ";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=2525501;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=634416;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=6904302;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
