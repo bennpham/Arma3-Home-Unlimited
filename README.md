@@ -40,6 +40,12 @@ Parameter Types
 Note:
 ------
 - Press "F" or whatever you cycle weapon key is at the start to pull out your weapon (if you are playing on dedicated servers) 
+- There are 169 randomized handpicked locations on Stratis
+- There are 20 randomized handpicked locations on Altis. You also have the option to directly spawn at the handpick locations instead of randomizing them on the Altis version.
+
+Known Issues:
+--------------
+- Completely randomized spawns that are not handpicked may bug out and not spawn enemies. You'll get an instant mission complete if that happen. This is often the case if the random location happens to be a small island and the enemy spawn distance parameter lands in the water for every spots selected.
 
 Optional Addons: 
 ----------------
