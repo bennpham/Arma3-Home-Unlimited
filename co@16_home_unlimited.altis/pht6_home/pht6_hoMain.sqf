@@ -1,21 +1,5 @@
 if (isServer) then {
     
-    // INT VALUE representing spawnType value where mission maker 
-    //		defined spawn locations start
-    _MISSIONMAKERSELECTEDSPAWNLOCATIONVALUE = 7;
-    
-/*--- Get Unit names for all playable units ---*/
-	_ALLPLAYERUNITS = [];
-    if (!isDedicated) then {
-    	_ALLPLAYERUNITS = switchableUnits;
-    } else {
-        _ALLPLAYERUNITS = playableUnits;
-    };
-
-
-/*--- Prevent rare occasion of players death ---*/
-	{_x allowDamage false} forEach _ALLPLAYERUNITS;
-
 	waitUntil { 
 		(!( isNil {pht6_parameter_enemyCount} )) AND
 		(!( isNil {pht6_parameter_startDistance} )) AND 
@@ -24,6 +8,27 @@ if (isServer) then {
         (!( isNil {pht6_parameter_spawnRange} ))
 	}; 
     
+    
+    // INT VALUE representing spawnType value where mission maker 
+    //		defined spawn locations start
+    _MISSIONMAKERSELECTEDSPAWNLOCATIONVALUE = 7;
+    _SPAWN_PLAYER_PREDEFINED_VALUE = 4; 
+    _STARTPOS_MAX_VALID_DISTANCE = 50; 
+
+
+/*--- Get Unit names for all playable units ---*/
+	_ALLPLAYERUNITS = [];
+	{
+    	if (side _x == Resistance) then {
+           	_ALLPLAYERUNITS pushback _x;
+        };
+	} forEach allunits; 
+    
+	
+/*--- Prevent rare occasion of players death ---*/
+		{_x allowDamage false} forEach _ALLPLAYERUNITS;
+        
+                
 /*--- Initialize Values ---*/
 
 	// All Preplaced Positions
@@ -35,30 +40,6 @@ if (isServer) then {
     _minSizeY = _minSize;
     _maxSizeX = _maxSize;
     _maxSizeY = _maxSize;
-	
-	// Change _randomLocation to defined location if user specifies one
-	switch (pht6_parameter_spawnType) do {
-		case 8: {_randomLocation = location_abdera};
-		case 9: {_randomLocation = location_agios_dionysios};
-		case 10: {_randomLocation = location_athira};
-		case 11: {_randomLocation = location_athira_factory};
-		case 12: {_randomLocation = location_cap_strigla};
-		case 13: {_randomLocation = location_charkia};
-		case 14: {_randomLocation = location_ghost_hotel_1};
-		case 15: {_randomLocation = location_kastro_castle};
-		case 16: {_randomLocation = location_kavala};
-		case 17: {_randomLocation = location_kavala_office_complex};
-		case 18: {_randomLocation = location_kavala_hospital};
-		case 19: {_randomLocation = location_neochori};
-		case 20: {_randomLocation = location_oreokastro_church};
-		case 21: {_randomLocation = location_paros};
-		case 22: {_randomLocation = location_pyrgos};
-		case 23: {_randomLocation = location_pyrgos_office_complex};
-		case 24: {_randomLocation = location_sofia};
-		case 25: {_randomLocation = location_syrta};
-		case 26: {_randomLocation = location_thronos};
-		case 27: {_randomLocation = location_zaros_church};
-	};
     
     // Any Random Locations Positions
     _randomCityLocationPos = [];
@@ -118,6 +99,8 @@ if (isServer) then {
     _playerPositionsCompleteRandom = [_buildingPosArray call BIS_fnc_selectRandom];
     
     _mrkText = "";
+    
+    
 /*--- Marker Player Location ---*/       
 	if (pht6_parameter_spawnType >= _MISSIONMAKERSELECTEDSPAWNLOCATIONVALUE) then
     {        
@@ -147,7 +130,7 @@ if (isServer) then {
 	if (pht6_parameter_spawnType >= _MISSIONMAKERSELECTEDSPAWNLOCATIONVALUE) then 
     {
         _playerNum = 0;
-        for "_yPos" from 0 to ( ceil ((count _ALLPLAYERUNITS)/4) - 1 ) do {
+        for "_yPos" from 0 to ( ceil ((count _ALLPLAYERUNITS)/_SPAWN_PLAYER_PREDEFINED_VALUE) - 1 ) do {
             _unitsPerRow = 3;
             if ( ((count _ALLPLAYERUNITS) - _playerNum - 1) < 3 ) then {
               	_unitPerRow = (count _ALLPLAYERUNITS) - _playerNum - 1;
@@ -199,6 +182,30 @@ if (isServer) then {
             _startPos = _startPos + 1;
         } forEach _ALLPLAYERUNITS;
     };
+    
+    
+/*--- Get Unit names for all playable units again to make sure they're loaded properly ---*/
+	_ALLPLAYERUNITS = [];
+	{
+    	if (side _x == Resistance) then {
+           	_ALLPLAYERUNITS pushback _x;
+        };
+	} forEach allunits; 
+    
+    
+/*--- Check all Players are at correct spawn ---*/
+	// Will cause overlap at the moment, but I'm assuming this should be fine for error check.
+    // Player is still at allowDamage false, so I don't think death accidents are high, but if I'm wrong then this needs fine tuning.
+	{
+	    while {(_x distance2D getMarkerPos "objective") > _STARTPOS_MAX_VALID_DISTANCE} do {
+            if (pht6_parameter_spawnType >= _MISSIONMAKERSELECTEDSPAWNLOCATIONVALUE) then {
+                _x setDir getDir _randomLocation;
+                _x setPosASL [(getPosASL _randomLocation select 0),(getPosASL _randomLocation select 1),(getPosASL _randomLocation select 2)];
+            } else {
+                _x setPosATL (_playerPositionsCompleteRandom call BIS_fnc_selectRandom);
+            };
+	    };
+    } forEach _ALLPLAYERUNITS;
     
 
 /*--- Spawn Enemies ---*/
