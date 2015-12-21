@@ -49,6 +49,27 @@ if (isServer) then {
         case 4: {_randomCityLocationPos = position (nearestLocations [position p1, ["NameCityCapital","NameCity","NameVillage"], _maxSize] call bis_fnc_selectRandom);};
         case 5: {_randomCityLocationPos = position (nearestLocations [position p1, ["NameCityCapital","NameCity","NameVillage","NameLocal"], _maxSize] call bis_fnc_selectRandom);};
         case 6: {_randomCityLocationPos = position (nearestLocations [position p1, ["NameMarine"], _maxSize] call bis_fnc_selectRandom);};
+		// Fixed Preplaced Positions
+		case 8: {_randomLocation = location_abdera;};
+		case 9: {_randomLocation = location_agios_dionysios;};
+		case 10: {_randomLocation = location_athira;};
+		case 11: {_randomLocation = location_athira_factory;};
+		case 12: {_randomLocation = location_cap_strigla;};
+		case 13: {_randomLocation = location_charkia;};
+		case 14: {_randomLocation = location_ghost_hotel_1;};
+		case 15: {_randomLocation = location_kastro_castle;};
+		case 16: {_randomLocation = location_kavala;};
+		case 17: {_randomLocation = location_kavala_office_complex;};
+		case 18: {_randomLocation = location_kavala_hospital;};
+		case 19: {_randomLocation = location_neochori;};
+		case 20: {_randomLocation = location_oreokastro_church;};
+		case 21: {_randomLocation = location_paros;};
+		case 22: {_randomLocation = location_pyrgos;};
+		case 23: {_randomLocation = location_pyrgos_office_complex;};
+		case 24: {_randomLocation = location_sofia;};
+		case 25: {_randomLocation = location_syrta;};
+		case 26: {_randomLocation = location_thronos;};
+		case 27: {_randomLocation = location_zaros_church;};
     };
     
     // Change _minSize & _maxSize if Marker Not In Water Parameter is Enabled to not place spawn marker in ocean
