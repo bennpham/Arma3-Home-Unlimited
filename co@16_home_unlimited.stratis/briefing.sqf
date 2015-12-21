@@ -24,6 +24,21 @@ Friendlies do NOT wear masks.<br/><br/>
 
 Click <font color = '#FF8000'>F</font> or whatever you mapped your <font color = '#FF8000'>Next Weapon / Firemode</font> button to in order to pull out your weapon at the start."],
 
+		["Known Issues",
+"You won't be able to see your weapon at the start if you play on dedicated servers. Simply press whatever your 
+<font color = '#FF8000'>Next Weapon / Firemode</font> button is to pull out your weapon. Default is <font color = '#FF8000'>F</font>.<br/><br/>
+
+Completely randomized spawns that are not handpicked may bug out and not spawn enemies. You'll get an instant mission complete if that 
+happens. This is often the case if the random location happens to be a small island and the enemy spawn distance paramter lands in 
+the water for every spots selected.<br/><br/>
+
+You may have a small probability of dying on spawn with completely randomized spawns that are not handpicked. This also depends on the house. 
+You may get stuck in smaller houses and end up dying if you're stuck in a wall.<br/><br/>
+
+Sometimes, not all playable units are spawned at the objective location.<br/><br/>
+
+Sometimes, units may not have a uniform, therefore, will be low on ammo."],
+
 		["Credits",
 "Mission by Phantom Six<br/><br/>
 Thanks to Varanon and Alwarren for FHQ Task Tracker and FHQ SafeAddLoadout.<br/><br/>
