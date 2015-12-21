@@ -42,3 +42,12 @@ class pht6_param_startRange
     default = 4;
 	function = "PHT6_fnc_hoStartRange";
 };
+
+class pht6_param_radio
+{
+    title = "TFAR Radios";
+    values[] = {0,1};
+    texts[] = {"Disable", "Enable"};
+    default = 1;
+	function = "PHT6_fnc_hoRadio";
+};

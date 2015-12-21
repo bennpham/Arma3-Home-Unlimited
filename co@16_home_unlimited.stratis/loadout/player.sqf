@@ -80,6 +80,7 @@ if (!isNull _unit) then {
     
     waitUntil 
     { 
+    	(!( isNil {pht6_parameter_radio} )) AND
 		(!( isNil {pht6_parameter_playerWeapPistols} )) AND
 		(!( isNil {pht6_parameter_playerWeapSmgs} )) AND
         (!( isNil {pht6_parameter_playerWeapShotguns} )) AND
@@ -816,7 +817,9 @@ if (!isNull _unit) then {
     _unit linkItem "ItemMap";
     _unit linkItem "ItemCompass";
     _unit linkItem "ItemWatch";
-    _unit linkItem "ItemRadio";
+    if (pht6_parameter_radio == 1) then {
+        _unit linkItem "ItemRadio";
+    };
     
     if (pht6_parameter_playerFAK > 0) 			then {_unit addItem "FirstAidKit";    				};
     if (pht6_parameter_playerThrowableGrenades > 0) 		then {_unit addMagazineGlobal "HandGrenade";		};
