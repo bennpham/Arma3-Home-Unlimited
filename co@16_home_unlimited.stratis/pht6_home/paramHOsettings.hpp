@@ -49,7 +49,7 @@ class pht6_param_enemyMask
     values[] = {0,1};
     texts[] = {"Balaclava or Shemags Only (Fully Masked)", "ALL MASKS"};
     default = 0;
-	function = "PHT6_fnc_enemyMask";
+	function = "PHT6_fnc_hoEnemyMask";
 };
 
 class pht6_param_radio
