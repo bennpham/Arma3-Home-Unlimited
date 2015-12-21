@@ -858,12 +858,4 @@ if (!isNull _unit) then {
     
     _unit selectWeapon "this";
     reload _unit;
-
-    /* Invalid Item Doesn't Exist Debug */
-    if (count uniform _unit == 0) then {
-        hintSilent parseText format ["<t color = '#00FFFF'>%1</t> does not exist. Please report to mission's creator.", _randomUniform];
-    };
-    if (count weapons _unit == 0) then {
-        hintSilent parseText format ["<t color = '#00FFFF'>%1</t> does not exist. Please report to mission's creator.", _randomWeapon];
-    }; 
 };
