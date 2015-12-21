@@ -172,7 +172,7 @@ if (!isNull _unit) then {
     
     if (isClass(configFile >> "CfgPatches" >> "rhsusf_main") && pht6_parameter_enemyWeapPistols == 1) then
     {
-        _listRHSUSFPistols = ["RHSUSF_WEAP_GLOCK17G4","RHSUSF_WEAP_M1911A1"];
+        _listRHSUSFPistols = ["RHSUSF_WEAP_GLOCK17G4","RHSUSF_WEAP_M1911A1","rhsusf_weap_m9"];
         _ListOfWeapons append _listRHSUSFPistols; 
     };
     
@@ -517,7 +517,15 @@ if (!isNull _unit) then {
             _unit addMagazineGlobal "rhsusf_mag_7x45acp_MHP";
             _unit addWeaponGlobal _randomWeapon;	    	
 	        _uniform addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP", 8];
-	    };        
+	    };     
+	    
+	    if (_randomWeapon == "rhsusf_weap_m9") then 
+	    {
+            _unit addMagazineGlobal "rhsusf_mag_15Rnd_9x19_FMJ";
+            _unit addWeaponGlobal _randomWeapon;	    	
+	        _uniform addMagazineCargoGlobal ["rhsusf_mag_15Rnd_9x19_FMJ", 4];
+	        _uniform addMagazineCargoGlobal ["rhsusf_mag_15Rnd_9x19_JHP", 4];
+	    };       
     };
 
     
