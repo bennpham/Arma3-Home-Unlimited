@@ -50,10 +50,18 @@ if (!isNull _unit) then {
         _unit addHeadgear _randomHeadgear;
     };
     
+    waitUntil { !( isNil {pht6_parameter_enemyMask} )};
     _listOfGlasses = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli","G_Bandanna_aviator","G_Bandanna_beast","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_shades","G_Bandanna_sport","G_Bandanna_tan"];
+    if (pht6_parameter_enemyMask == 0) then {
+        _listOfGlasses = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli"];
+    };
+    
     if (isClass(configFile >> "CfgPatches" >> "rhsusf_main")) then
 	{
 		 _rhsMasks = ["rhs_balaclava","rhs_scarf"];
+         if (pht6_parameter_enemyMask == 0) then {
+             _rhsMasks = ["rhs_balaclava"];
+         };
 	     _listOfGlasses append _rhsMasks;
 	};
     _randomGlasses = _listOfGlasses call bis_fnc_selectRandom;

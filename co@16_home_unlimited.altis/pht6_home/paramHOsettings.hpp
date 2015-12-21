@@ -43,6 +43,15 @@ class pht6_param_startRange
 	function = "PHT6_fnc_hoStartRange";
 };
 
+class pht6_param_enemyMask
+{
+    title = "Enemy's Mask";
+    values[] = {0,1};
+    texts[] = {"Balaclava or Shemags Only (Fully Masked)", "ALL MASKS"};
+    default = 0;
+	function = "PHT6_fnc_hoRadio";
+};
+
 class pht6_param_radio
 {
     title = "TFAR Radios";

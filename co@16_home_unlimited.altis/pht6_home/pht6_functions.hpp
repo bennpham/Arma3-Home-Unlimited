@@ -9,6 +9,7 @@ class PHT6 {
 		class hoEnemyCount {file = "pht6_home\pht6_hoEnemyCount.sqf";};
 		class hoEnemySkill {file = "pht6_home\pht6_hoEnemySkill.sqf";};
 		class hoStartRange {file = "pht6_home\pht6_hoStartRange.sqf";};
+		class hoEnemyMask {file = "pht6_home\pht6_hoEnemyMask.sqf";};
 		
 		class hoRadio {file = "pht6_home\pht6_hoRadio.sqf";};
 		
