@@ -16,6 +16,8 @@ Parameter Types
 - Amount of Enemies
 - Enemy Skill
 - Start Range
+- Enemy's Masks
+- TFAR Radios
 - PLAYER: Armor
 - PLAYER: First Aid Kits
 - PLAYER: THROWABLE: Grenades
