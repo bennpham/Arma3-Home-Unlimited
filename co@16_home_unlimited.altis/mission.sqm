@@ -320,7 +320,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Sign_Sphere10cm_F";
 			skill=0.60000002;
-			text="location_pyrgos_business";
+			text="location_pyrgos_office_complex";
 			init="this setPosASL [16594.3,12824.1,11.2713]; this setDir 0.486741; ";
 		};
 		class Item3
