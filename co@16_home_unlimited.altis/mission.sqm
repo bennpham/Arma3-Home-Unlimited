@@ -536,7 +536,7 @@ class Mission
 			age="UNKNOWN";
 			text="MISSION FAIL! All players dead";
 			expCond="!alive p1 && !alive p2 && !alive p3 && !alive p4 && !alive p5 && !alive p6 && !alive p7 && !alive p8 && !alive p9 && !alive p10 && !alive p11 && !alive p12 && !alive p13 && !alive p14 && !alive p15 && !alive p16";
-			expActiv="[""end1"",false] call bis_fnc_endMission;";
+			expActiv="[""end1"",false] call bis_fnc_endMissionServer;";
 			class Effects
 			{
 			};
@@ -572,7 +572,7 @@ class Mission
 			age="UNKNOWN";
 			text="VICTORY";
 			expCond="[""task1""] call FHQ_TT_isTaskSuccessful";
-			expActiv="""end2"" call bis_fnc_endMission; ";
+			expActiv="""end2"" call bis_fnc_endMissionServer; ";
 			class Effects
 			{
 			};
