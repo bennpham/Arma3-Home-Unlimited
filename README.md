@@ -50,11 +50,13 @@ Known Issues:
 - Completely randomized spawns that are not handpicked may bug out and not spawn enemies. You'll get an instant mission complete if that happen. This is often the case if the random location happens to be a small island and the enemy spawn distance parameter lands in the water for every spots selected.
 - You may have a small probability of dying on spawn with completely randomized spawns that are not handpicked. This also depends on the house. You may get stuck in smaller houses and end up dying if you're stuck in a wall.
 - Sometimes, not all playable units are spawned at the objective location. 
-- Sometimes, units may not have a uniform, therefore, will be low on ammo. 
+- Sometimes, units may not have a uniform. This is usually the case if you disable AI and take the first slot. 
 
 Optional Addons: 
 ----------------
 - Community Upgrade Project - Weapons (more guns) 
+http://cup-arma3.org/ 
+- Community Upgrade Project - Units (more clothes) 
 http://cup-arma3.org/ 
 - FHQ M4 (more guns) 
 http://friedenhq.org/?page_id=165 
