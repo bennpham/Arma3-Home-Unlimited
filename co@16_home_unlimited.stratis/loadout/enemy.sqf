@@ -34,6 +34,33 @@ if (!isNull _unit) then {
         _listOfUniforms append _CUPUSMCUniforms;  
     };
     
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_People_Civil_Chernarus")) then {
+    	_CUPCivUniforms = ["CUP_U_C_Citizen_01","CUP_U_C_Citizen_02","CUP_U_C_Citizen_03","CUP_U_C_Citizen_04","CUP_U_C_Labcoat_01","CUP_U_C_Labcoat_02","CUP_U_C_Labcoat_03","CUP_U_C_Mechanic_01","CUP_U_C_Mechanic_02","CUP_U_C_Mechanic_03","CUP_U_C_Pilot_01","CUP_U_C_Profiteer_01","CUP_U_C_Profiteer_02","CUP_U_C_Profiteer_03","CUP_U_C_Profiteer_04","CUP_U_C_Rocker_01","CUP_U_C_Rocker_02","CUP_U_C_Rocker_03","CUP_U_C_Rocker_04","CUP_U_C_Suit_01","CUP_U_C_Suit_02","CUP_U_C_Villager_01","CUP_U_C_Villager_02","CUP_U_C_Villager_03","CUP_U_C_Villager_04","CUP_U_C_Woodlander_01","CUP_U_C_Woodlander_02","CUP_U_C_Woodlander_03","CUP_U_C_Woodlander_04","CUP_U_C_Worker_01","CUP_U_C_Worker_02","CUP_U_C_Worker_03","CUP_U_C_Worker_04","CUP_U_C_Priest_01"];
+        _listOfUniforms append _CUPCivUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_SLA")) then {
+      	_CUPSLAUniforms = ["CUP_U_O_SLA_Overalls_Pilot","CUP_U_O_SLA_Overalls_Tank","CUP_U_O_Partisan_TTsKO","CUP_U_O_Partisan_TTsKO_Mixed","CUP_U_O_Partisan_VSR_Mixed1","CUP_U_O_Partisan_VSR_Mixed2"];
+        _listOfUniforms append _CUPSLAUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_Chedaki")) then {
+      	_CUPCHDKZUniforms = ["CUP_U_O_CHDKZ_Bardak","CUP_U_O_CHDKZ_Lopotev","CUP_U_O_CHDKZ_Kam_01","CUP_U_O_CHDKZ_Kam_02","CUP_U_O_CHDKZ_Kam_03","CUP_U_O_CHDKZ_Kam_04","CUP_U_O_CHDKZ_Kam_05","CUP_U_O_CHDKZ_Kam_06","CUP_U_O_CHDKZ_Kam_07","CUP_U_O_CHDKZ_Kam_08","CUP_U_O_CHDKZ_Commander"];
+        _listOfUniforms append _CUPCHDKZUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_TakiInsurgents")) then 
+    {
+    	_CUPTakiUniforms = ["CUP_O_TKI_Khet_Jeans_01","CUP_O_TKI_Khet_Jeans_02","CUP_O_TKI_Khet_Jeans_03","CUP_O_TKI_Khet_Jeans_04","CUP_O_TKI_Khet_Partug_01","CUP_O_TKI_Khet_Partug_02","CUP_O_TKI_Khet_Partug_03","CUP_O_TKI_Khet_Partug_04","CUP_O_TKI_Khet_Partug_05","CUP_O_TKI_Khet_Partug_06","CUP_O_TKI_Khet_Partug_07","CUP_O_TKI_Khet_Partug_08"];
+        _listOfUniforms append _CUPTakiUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_NAPA")) then 
+    {
+    	_CUPNAPAUniforms = ["CUP_U_I_GUE_Flecktarn","CUP_U_I_GUE_Flecktarn2","CUP_U_I_GUE_Flecktarn3","CUP_U_I_GUE_Woodland1"];
+        _listOfUniforms append _CUPNAPAUniforms;  
+    };
+    
     _randomUniform = _listOfUniforms call bis_fnc_selectRandom; 
     _unit forceaddUniform _randomUniform;
     
@@ -46,12 +73,52 @@ if (!isNull _unit) then {
 	        _rhsHeadgear = ["rhs_beanie_green","rhs_beanie","rhs_Booniehat_digi","rhs_Booniehat_flora"];
 	        _listOfHeadgears append _rhsHeadgear;
 	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_PMC")) then
+		{
+	        _cuppmcHeadgear = ["CUP_H_PMC_Cap_Burberry","CUP_H_PMC_Cap_Grey","CUP_H_PMC_Cap_Tan","CUP_H_PMC_Cap_Back_Burberry","CUP_H_PMC_Cap_Back_Grey","CUP_H_PMC_Cap_Back_Tan"];
+	        _listOfHeadgears append _cuppmcHeadgear;
+	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_People_Civil_Chernarus")) then
+		{
+	        _cupcivHeadgear = ["CUP_H_C_Beanie_01","CUP_H_C_Beanie_02","CUP_H_C_Beanie_03","CUP_H_C_Beanie_04","CUP_H_C_Beret_01","CUP_H_C_Beret_02","CUP_H_C_Beret_03","CUP_H_C_Beret_04","CUP_H_C_Ushanka_01","CUP_H_C_Ushanka_02","CUP_H_C_Ushanka_03","CUP_H_C_Ushanka_04","CUP_H_C_MAGA_01"];
+	        _listOfHeadgears append _cupcivHeadgear;
+	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_TakiInsurgents")) then
+		{
+	        _cuptakiHeadgear = ["CUP_H_TKI_Pakol_1_01","CUP_H_TKI_Pakol_2_04","CUP_H_TKI_Pakol_2_05","CUP_H_TKI_Pakol_2_06","CUP_H_TKI_Pakol_1_02","CUP_H_TKI_Pakol_1_03","CUP_H_TKI_Pakol_1_04","CUP_H_TKI_Pakol_1_05","CUP_H_TKI_Pakol_1_06","CUP_H_TKI_Pakol_2_01","CUP_H_TKI_Pakol_2_02","CUP_H_TKI_Pakol_2_03","CUP_H_TKI_SkullCap_01","CUP_H_TKI_SkullCap_02","CUP_H_TKI_SkullCap_03","CUP_H_TKI_SkullCap_04","CUP_H_TKI_SkullCap_05","CUP_H_TKI_SkullCap_06","CUP_H_TKI_Lungee_Open_01","CUP_H_TKI_Lungee_Open_02","CUP_H_TKI_Lungee_Open_03","CUP_H_TKI_Lungee_Open_04","CUP_H_TKI_Lungee_Open_05","CUP_H_TKI_Lungee_Open_06"];
+	        _listOfHeadgears append _cuptakiHeadgear;
+	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_SLA")) then
+		{
+	        _cupslaHeadgear = ["CUP_H_SLA_BeretRed","CUP_H_SLA_BeanieGreen"];
+	        _listOfHeadgears append _cupslaHeadgear;
+	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_NAPA")) then
+		{
+	        _cupnapaHeadgear = ["CUP_H_NAPA_Fedora"];
+	        _listOfHeadgears append _cupnapaHeadgear;
+	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_USMC")) then
+		{
+	        _cupusmcfrHeadgear = ["CUP_H_FR_Headband_Headset","CUP_H_FR_BandanaWdl"];
+	        _listOfHeadgears append _cupusmcfrHeadgear;
+	    };
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_Chedaki")) then
+		{
+	        _cupchdkzHeadgear = ["CUP_H_ChDKZ_Beret","CUP_H_ChDKZ_Beanie"];
+	        _listOfHeadgears append _cupchdkzHeadgear;
+	    };
 	    _randomHeadgear = _listOfHeadgears call bis_fnc_selectRandom;
 		_unit addHeadgear _randomHeadgear;
     }; 
     if (_haveHeadgear == 2) then
     {
         _listOfShemags = ["H_Shemag_olive","H_Shemag_olive_hs","H_ShemagOpen_tan","H_ShemagOpen_khk","H_Shemag_tan"];
+        if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_TakiInsurgents")) then
+		{
+	        _cuptakiShemags = ["CUP_H_TKI_Lungee_01","CUP_H_TKI_Lungee_02","CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04","CUP_H_TKI_Lungee_05","CUP_H_TKI_Lungee_06","CUP_H_TK_Lungee"];
+	        _listOfShemags append _cuptakiShemags;
+	    };
         _randomHeadgear = _listOfShemags call bis_fnc_selectRandom;
         _unit addHeadgear _randomHeadgear;
     };
@@ -157,7 +224,7 @@ if (!isNull _unit) then {
     
     if (isClass(configFile >> "CfgPatches" >> "CUP_Weapons_WeaponsCore") && (pht6_parameter_enemyWeapRifles == 1 OR pht6_parameter_enemyWeapRifles == 3)) then
 	{
-        _listCUPAssaultRifles = ["CUP_arifle_AKS","CUP_arifle_AKS_Gold","CUP_arifle_AKS74U","CUP_arifle_G36C","CUP_arifle_M16A2","CUP_arifle_M4A1","CUP_arifle_Sa58V","CUP_arifle_Mk16_CQC","CUP_arifle_XM8_Compact"];
+        _listCUPAssaultRifles = ["CUP_arifle_AKS","CUP_arifle_AKS_Gold","CUP_arifle_AKM","CUP_arifle_AK47","CUP_arifle_AKS74U","CUP_arifle_G36C","CUP_arifle_M16A2","CUP_arifle_M4A1","CUP_arifle_Sa58V","CUP_arifle_Mk16_CQC","CUP_arifle_XM8_Compact"];
 		_listOfWeapons append _listCUPAssaultRifles;
 	};     
     
@@ -462,7 +529,7 @@ if (!isNull _unit) then {
 	        _vest addMagazineCargoGlobal ["CUP_8Rnd_B_Saiga12_74Slug_M", 3];
 	    };
 	    
-	    if (_randomWeapon == "CUP_arifle_AKS" OR _randomWeapon == "CUP_arifle_AKS_Gold") then 
+	    if (_randomWeapon == "CUP_arifle_AKS" OR _randomWeapon == "CUP_arifle_AKS_Gold" OR _randomWeapon == "CUP_arifle_AKM" OR _randomWeapon == "CUP_arifle_AK47") then 
 	    {
             _unit addMagazineGlobal "CUP_30Rnd_762x39_AK47_M";  
             _unit addWeaponGlobal _randomWeapon;	    	
