@@ -28,6 +28,12 @@ if (!isNull _unit) then {
         _listOfUniforms append _rhsGuerUniforms;
     };
     
+    if (isClass(configFile >> "CfgPatches" >> "rhsgref_main")) then
+	{
+        _rhsGuerUniforms = ["rhsgref_uniform_para_ttsko_mountain","rhsgref_uniform_para_ttsko_oxblood","rhsgref_uniform_para_ttsko_urban","rhsgref_uniform_vsr","rhsgref_uniform_ttsko_forest","rhsgref_uniform_ttsko_mountain","rhsgref_uniform_ttsko_urban","rhsgref_uniform_alpenflage","rhsgref_uniform_flecktarn","rhsgref_uniform_tigerstripe","rhsgref_uniform_reed","rhsgref_uniform_woodland","rhsgref_uniform_woodland_olive","rhs_insurgent_uniform_1","rhs_insurgent_uniform_2","rhs_insurgent_uniform_3","rhs_insurgent_uniform_4","rhs_insurgent_uniform_5"];
+        _listOfUniforms append _rhsGuerUniforms;
+    };    
+    
     if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_USMC")) then 
     {
     	_CUPUSMCUniforms = ["CUP_B_USMC_Navy_Blue", "CUP_B_USMC_Navy_Brown", "CUP_B_USMC_Navy_Green", "CUP_B_USMC_Navy_Red", "CUP_B_USMC_Navy_Violet", "CUP_B_USMC_Navy_White", "CUP_B_USMC_Navy_Yellow"];
@@ -57,8 +63,26 @@ if (!isNull _unit) then {
     
     if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_NAPA")) then 
     {
-    	_CUPNAPAUniforms = ["CUP_U_I_GUE_Flecktarn","CUP_U_I_GUE_Flecktarn2","CUP_U_I_GUE_Flecktarn3","CUP_U_I_GUE_Woodland1"];
+    	_CUPNAPAUniforms = ["CUP_U_I_GUE_Anorak_01","CUP_U_I_GUE_Anorak_03","CUP_U_I_GUE_Anorak_02","CUP_U_I_GUE_Flecktarn","CUP_U_I_GUE_Flecktarn2","CUP_U_I_GUE_Flecktarn3","CUP_U_I_GUE_Woodland1"];
         _listOfUniforms append _CUPNAPAUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_ACR")) then
+    {
+      	_CUPACRUniforms = ["CUP_U_B_CZ_WDL_TShirt"];
+        _listOfUniforms append _CUPACRUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_BAF")) then
+    {
+      	_CUPBAFUniforms = ["CUP_U_B_BAF_DDPM_Tshirt","CUP_U_B_BAF_MTP_Tshirt"];
+        _listOfUniforms append _CUPBAFUniforms;  
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_Russia")) then
+    {
+      	_CUPRUSUniforms = ["CUP_U_O_RUS_Gorka_Green","CUP_U_O_RUS_Gorka_Partizan_A","CUP_U_O_RUS_Gorka_Partizan"];
+        _listOfUniforms append _CUPRUSUniforms;  
     };
     
     _randomUniform = _listOfUniforms call bis_fnc_selectRandom; 
@@ -73,6 +97,11 @@ if (!isNull _unit) then {
 	        _rhsHeadgear = ["rhs_beanie_green","rhs_beanie","rhs_Booniehat_digi","rhs_Booniehat_flora"];
 	        _listOfHeadgears append _rhsHeadgear;
 	    };
+        if (isClass(configFile >> "CfgPatches" >> "rhsgref_main")) then
+        {
+            _rhsHeadgear = ["rhsgref_fieldcap_ttsko_digi","rhsgref_fieldcap_ttsko_forest","rhsgref_fieldcap_ttsko_mountain","rhsgref_fieldcap_ttsko_urban","rhsgref_Booniehat_alpen","rhsgref_bcap_specter"];
+	        _listOfHeadgears append _rhsHeadgear;
+        };
         if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_PMC")) then
 		{
 	        _cuppmcHeadgear = ["CUP_H_PMC_Cap_Burberry","CUP_H_PMC_Cap_Grey","CUP_H_PMC_Cap_Tan","CUP_H_PMC_Cap_Back_Burberry","CUP_H_PMC_Cap_Back_Grey","CUP_H_PMC_Cap_Back_Tan"];
@@ -80,7 +109,7 @@ if (!isNull _unit) then {
 	    };
         if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_People_Civil_Chernarus")) then
 		{
-	        _cupcivHeadgear = ["CUP_H_C_Beanie_01","CUP_H_C_Beanie_02","CUP_H_C_Beanie_03","CUP_H_C_Beanie_04","CUP_H_C_Beret_01","CUP_H_C_Beret_02","CUP_H_C_Beret_03","CUP_H_C_Beret_04","CUP_H_C_Ushanka_01","CUP_H_C_Ushanka_02","CUP_H_C_Ushanka_03","CUP_H_C_Ushanka_04","CUP_H_C_MAGA_01"];
+	        _cupcivHeadgear = ["CUP_H_C_Beanie_01","CUP_H_C_Beanie_02","CUP_H_C_Beanie_03","CUP_H_C_Beanie_04","CUP_H_C_Beret_01","CUP_H_C_Beret_02","CUP_H_C_Beret_03","CUP_H_C_Beret_04","CUP_H_C_Ushanka_01","CUP_H_C_Ushanka_02","CUP_H_C_Ushanka_03","CUP_H_C_Ushanka_04","CUP_H_C_MAGA_01","CUP_H_C_TrackIR_01"];
 	        _listOfHeadgears append _cupcivHeadgear;
 	    };
         if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_TakiInsurgents")) then
@@ -100,7 +129,7 @@ if (!isNull _unit) then {
 	    };
         if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_USMC")) then
 		{
-	        _cupusmcfrHeadgear = ["CUP_H_FR_Headband_Headset","CUP_H_FR_BandanaWdl"];
+	        _cupusmcfrHeadgear = ["CUP_H_FR_Headband_Headset","CUP_H_FR_BandanaWdl","CUP_H_FR_BandanaGreen"];
 	        _listOfHeadgears append _cupusmcfrHeadgear;
 	    };
         if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_Chedaki")) then
@@ -197,6 +226,12 @@ if (!isNull _unit) then {
     	_listVanillaARs = ["arifle_Katiba_C_F", "arifle_Mk20C_plain_F", "arifle_MXC_F", "arifle_MXC_Black_F", "arifle_SDAR_F", "arifle_TRG21_F", "arifle_TRG20_F"];
         _listOfWeapons append _ListVanillaARs;
     };
+    
+    if (isClass(configFile >> "CfgPatches" >> "A3_Weapons_F_Mod_SMGs_SMG_03") && pht6_parameter_enemyWeapSmgs == 2) then
+    {
+      	_listADR97 = ["SMG_03C_black","SMG_03C_camo","SMG_03C_hex","SMG_03C_khaki","SMG_03C_TR_black","SMG_03C_TR_camo","SMG_03C_TR_hex","SMG_03C_TR_khaki"];
+        _listOfWeapons append _listADR97; 
+    };
 	
 	if (isClass(configFile >> "CfgPatches" >> "CUP_Weapons_WeaponsCore") && pht6_parameter_enemyWeapPistols == 1) then
 	{
@@ -239,9 +274,15 @@ if (!isNull _unit) then {
 		_listOfWeapons append _listFHQM4;
 	};
     
+    if (isClass(configFile >> "CfgPatches" >> "rhsusf_main") && pht6_parameter_enemyWeapSmgs == 2) then
+	{
+        _listRHSSMGs = ["rhsusf_weap_MP7A1_base_f","rhsusf_weap_MP7A1_aor1","rhsusf_weap_MP7A1_desert","rhsusf_weap_MP7A1_winter"];
+		_listOfWeapons append _listRHSSMGs;
+	};
+    
     if (isClass(configFile >> "CfgPatches" >> "rhsusf_main") && (pht6_parameter_enemyWeapRifles == 1 OR pht6_parameter_enemyWeapRifles == 3)) then
 	{
-        _listRHSUSFRifles = ["RHS_WEAP_M16A4","RHS_WEAP_M16A4_CARRYHANDLE","RHS_WEAP_M16A4_GRIP","RHS_WEAP_M16A4_CARRYHANDLE_GRIP","RHS_WEAP_M4A1","RHS_WEAP_M4A1_CARRYHANDLE","RHS_WEAP_M4A1_GRIP","RHS_WEAP_M4A1_CARRYHANDLE_GRIP"];
+        _listRHSUSFRifles = ["RHS_WEAP_M16A4","RHS_WEAP_M16A4_CARRYHANDLE","RHS_WEAP_M16A4_GRIP","RHS_WEAP_M16A4_CARRYHANDLE_GRIP","RHS_WEAP_M4A1","RHS_WEAP_M4A1_CARRYHANDLE","RHS_WEAP_M4A1_GRIP","RHS_WEAP_M4A1_CARRYHANDLE_GRIP","rhs_weap_hk416d10","rhs_weap_hk416d10_LMT","rhs_weap_mk18","rhs_weap_mk18_KAC"];
 		_listOfWeapons append _listRHSUSFRifles;
 	};   
          
@@ -256,10 +297,16 @@ if (!isNull _unit) then {
         _listRHSUSFPistols = ["RHSUSF_WEAP_GLOCK17G4","RHSUSF_WEAP_M1911A1","rhsusf_weap_m9"];
         _ListOfWeapons append _listRHSUSFPistols; 
     };
-    
+
+    if (isClass(configFile >> "CfgPatches" >> "rhs_main") && pht6_parameter_enemyWeapSmgs == 2) then
+	{
+        _listRHSSMGs = ["rhs_weap_pp2000"];
+		_listOfWeapons append _listRHSSMGs;
+	};
+            
     if (isClass(configFile >> "CfgPatches" >> "rhs_main") && (pht6_parameter_enemyWeapRifles == 1 OR pht6_parameter_enemyWeapRifles == 3)) then
 	{
-        _listRHSRifles = ["rhs_weap_ak74m_folded","rhs_weap_akms"];
+        _listRHSRifles = ["rhs_weap_ak74m_folded","rhs_weap_akms","rhs_weap_aks74u","rhs_weap_aks74un"];
 		_listOfWeapons append _listRHSRifles;
 	};
     
@@ -268,6 +315,18 @@ if (!isNull _unit) then {
         _listRHSPistols = ["rhs_weap_pya","rhs_weap_makarov_pmm"];
         _listOfWeapons append _listRHSPistols;
     };
+    
+    if (isClass(configFile >> "CfgPatches" >> "rhsgref_main") && (pht6_parameter_enemyWeapRifles == 2 OR pht6_parameter_enemyWeapRifles == 3)) then
+	{
+        _listRHSOldRifles = ["rhs_weap_m38", "rhs_weap_kar98k"];
+		_listOfWeapons append _listRHSOldRifles;
+	};
+    
+    if (isClass(configFile >> "CfgPatches" >> "rhsgref_main") && (pht6_parameter_enemyWeapRifles == 1 OR pht6_parameter_enemyWeapRifles == 3)) then
+	{
+        _listRHSRifles = ["rhs_weap_m92","rhs_weap_m70ab2","rhs_weap_m70ab2_fold","rhs_weap_m70b1","rhs_weap_m92","rhs_weap_m92_fold","rhs_weap_m21a","rhs_weap_m21a_fold","rhs_weap_m21s","rhs_weap_m21s_fold"];
+		_listOfWeapons append _listRHSRifles;
+	};
     
     if (isClass(configFile >> "CfgPatches" >> "mas_weapons") && pht6_parameter_enemyWeapPistols == 1) then 
     {
@@ -409,6 +468,15 @@ if (!isNull _unit) then {
         _unit addWeaponGlobal _randomWeapon;    	  
         _unit addPrimaryWeaponItem "acc_flashlight";
         _vest addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag", 6];
+    };
+    
+    if (isClass(configFile >> "CfgPatches" >> "A3_Weapons_F_Mod_SMGs_SMG_03")) then {
+      	if (_randomWeapon == "SMG_03C_black" OR _randomWeapon == "SMG_03C_camo" OR _randomWeapon == "SMG_03C_hex" OR _randomWeapon == "SMG_03C_khaki" OR _randomWeapon == "SMG_03C_TR_black" OR _randomWeapon == "SMG_03C_TR_camo" OR _randomWeapon == "SMG_03C_TR_hex" OR _randomWeapon == "SMG_03C_TR_khaki") then
+        {
+            _unit addMagazineGlobal "50Rnd_570x28_SMG_03";
+            _unit addWeaponGlobal _randomWeapon;
+            _unit addMagazineCargoGlobal ["50Rnd_570x28_SMG_03", 5];
+        };
     };
     
     if (isClass(configFile >> "CfgPatches" >> "CUP_Weapons_WeaponsCore")) then
@@ -567,7 +635,7 @@ if (!isNull _unit) then {
     
     if (isClass(configFile >> "CfgPatches" >> "rhsusf_main")) then 
     {
-	    if (_randomWeapon == "RHS_WEAP_M16A4" OR _randomWeapon == "RHS_WEAP_M16A4_CARRYHANDLE" OR _randomWeapon == "RHS_WEAP_M16A4_GRIP" OR _randomWeapon == "RHS_WEAP_M16A4_CARRYHANDLE_GRIP" OR _randomWeapon == "RHS_WEAP_M4A1" OR _randomWeapon == "RHS_WEAP_M4A1_CARRYHANDLE" OR _randomWeapon == "RHS_WEAP_M4A1_GRIP" OR _randomWeapon == "RHS_WEAP_M4A1_CARRYHANDLE_GRIP") then 
+	    if (_randomWeapon == "RHS_WEAP_M16A4" OR _randomWeapon == "RHS_WEAP_M16A4_CARRYHANDLE" OR _randomWeapon == "RHS_WEAP_M16A4_GRIP" OR _randomWeapon == "RHS_WEAP_M16A4_CARRYHANDLE_GRIP" OR _randomWeapon == "RHS_WEAP_M4A1" OR _randomWeapon == "RHS_WEAP_M4A1_CARRYHANDLE" OR _randomWeapon == "RHS_WEAP_M4A1_GRIP" OR _randomWeapon == "RHS_WEAP_M4A1_CARRYHANDLE_GRIP"OR _randomWeapon == "rhs_weap_hk416d10" OR _randomWeapon == "rhs_weap_hk416d10_LMT" OR _randomWeapon == "rhs_weap_mk18" OR _randomWeapon == "rhs_weap_mk18_KAC") then 
 	    {
             _unit addMagazineGlobal "30Rnd_556x45_Stanag";
             _unit addWeaponGlobal _randomWeapon;	    	  
@@ -613,12 +681,19 @@ if (!isNull _unit) then {
 	        _vest addMagazineCargoGlobal ["rhsusf_mag_15Rnd_9x19_FMJ", 4];
 	        _vest addMagazineCargoGlobal ["rhsusf_mag_15Rnd_9x19_JHP", 4];
 	    };       
+        
+        if (_randomWeapon == "rhsusf_weap_MP7A1_base_f" OR _randomWeapon == "rhsusf_weap_MP7A1_aor1" OR _randomWeapon == "rhsusf_weap_MP7A1_desert" OR _randomWeapon == "rhsusf_weap_MP7A1_winter") then 
+        {
+			_unit addMagazineGlobal "rhsusf_mag_40Rnd_46x30_FMJ";
+            _unit addWeaponGlobal _randomWeapon;
+            _vest addMagazineCargoGlobal ["rhsusf_mag_40Rnd_46x30_FMJ", 3];
+            _vest addMagazineCargoGlobal ["rhsusf_mag_40Rnd_46x30_JHP", 3];
+        };
     };
-
     
     if (isClass(configFile >> "CfgPatches" >> "rhs_main")) then 
     {
-	    if (_randomWeapon == "rhs_weap_ak74m_folded") then 
+	    if (_randomWeapon == "rhs_weap_ak74m_folded" OR _randomWeapon == "rhs_weap_aks74u" OR _randomWeapon == "rhs_weap_aks74un") then 
 	    {
             _unit addMagazineGlobal "rhs_30Rnd_545x39_AK";  
             _unit addWeaponGlobal _randomWeapon;	    	
@@ -644,7 +719,45 @@ if (!isNull _unit) then {
             _unit addMagazineGlobal "rhs_mag_9x18_12_57N181S";
             _unit addWeaponGlobal _randomWeapon;	    	
 	        _vest addMagazineCargoGlobal ["rhs_mag_9x18_12_57N181S", 8];
-	    };  
+	    };
+        
+        if (_randomWeapon == "rhs_weap_pp2000") then
+        {
+          	_unit addMagazineGlobal "rhs_mag_9x19mm_7n21_20";
+            _unit addWeaponGlobal _randomWeapon;
+            _vest addMagazineCargoGlobal ["rhs_mag_9x19mm_7n21_20", 4];
+        };
+    };
+    
+	if (isClass(configFile >> "CfgPatches" >> "rhsgref_main")) then
+    {
+        if (_randomWeapon == "rhs_weap_m38") then 
+        {
+            _unit addMagazineGlobal "rhsgref_5Rnd_762x54_m38";  
+            _unit addWeaponGlobal _randomWeapon;	    	
+	        _vest addMagazineCargoGlobal ["rhsgref_5Rnd_762x54_m38", 6];
+        };
+        
+        if (_randomWeapon == "rhs_weap_kar98k") then 
+        {
+            _unit addMagazineGlobal "rhsgref_5Rnd_792x57_kar98k";  
+            _unit addWeaponGlobal _randomWeapon;	    	
+	        _vest addMagazineCargoGlobal ["rhsgref_5Rnd_792x57_kar98k", 6];
+        };
+        
+        if (_randomWeapon == "rhs_weap_m92" OR _randomWeapon == "rhs_weap_m70ab2" OR _randomWeapon == "rhs_weap_m70ab2_fold" OR _randomWeapon == "rhs_weap_m70b1" OR _randomWeapon == "rhs_weap_m92" OR _randomWeapon == "rhs_weap_m92_fold") then
+        {
+            _unit addMagazineGlobal "rhs_30Rnd_762x39mm";  
+            _unit addWeaponGlobal _randomWeapon;	    	
+	        _vest addMagazineCargoGlobal ["rhs_30Rnd_762x39mm", 6];        	    
+        };
+        
+        if (_randomWeapon == "rhs_weap_m21a" OR _randomWeapon == "rhs_weap_m21a_fold" OR _randomWeapon == "rhs_weap_m21s" OR _randomWeapon == "rhs_weap_m21s_fold") then 
+        {
+            _unit addMagazineGlobal "rhsgref_30rnd_556x45_m21";  
+            _unit addWeaponGlobal _randomWeapon;	    	
+	        _vest addMagazineCargoGlobal ["rhsgref_30rnd_556x45_m21", 6];             
+        };
     };
     
     if (isClass(configFile >> "CfgPatches" >> "mas_weapons")) then 
