@@ -16,6 +16,12 @@ if (!isNull _unit) then {
     /* Other gear, goggles, vest, uniform */
     _listOfUniforms = ["U_Competitor", "U_C_Poor_1", "U_C_Poor_2", "U_Marshal", "U_C_WorkerCoveralls", "U_I_G_Story_Protagonist_F", "U_I_G_resistanceLeader_F", "U_NikosBody", "U_OrestesBody", "U_Rangemaster","U_C_HunterBody_grn","U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_leader"];
     
+	if (395180 in (getDLCs 1)) then
+	{
+		_tanoaUniforms = ["U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_1_F","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_1_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_5_F","U_I_C_Soldier_Bandit_3_F","U_I_C_Soldier_Para_3_F","U_I_C_Soldier_Para_2_F","U_I_C_Soldier_Para_5_F","U_I_C_Soldier_Para_4_F","U_I_C_Soldier_Para_1_F"];
+		_listOfUniforms append _tanoaUniforms;
+	};
+	
     if (isClass(configFile >> "CfgPatches" >> "mas_afr_rebl")) then
 	{
         _masAfrConflictUniforms = ["U_mas_afr_O_rebel1","U_mas_afr_O_rebel2","U_mas_afr_O_rebel3","U_mas_afr_O_rebel4","U_mas_afr_O_rebel5","U_mas_afr_O_rebel6","U_mas_afr_O_rebel7","U_mas_afr_O_rebel8","U_mas_afr_O_rebel9","U_mas_afr_O_rebel10","U_mas_afr_O_uniform1","U_mas_afr_O_uniform2","U_mas_afr_O_uniform3","U_mas_afr_O_uniform4","U_mas_afr_O_uniform5","U_mas_afr_O_uniform6","U_mas_afr_O_uniform7","U_mas_afr_O_uniform8"];
@@ -84,6 +90,12 @@ if (!isNull _unit) then {
       	_CUPRUSUniforms = ["CUP_U_O_RUS_Gorka_Green","CUP_U_O_RUS_Gorka_Partizan_A","CUP_U_O_RUS_Gorka_Partizan"];
         _listOfUniforms append _CUPRUSUniforms;  
     };
+	
+    if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_Military_RACS")) then
+    {
+      	_CUPRACSUniforms = ["CUP_U_I_RACS_PilotOverall","CUP_U_I_RACS_Desert_1","CUP_U_I_RACS_Desert_2","CUP_U_I_RACS_Urban_1","CUP_U_I_RACS_Urban_2","CUP_U_I_RACS_mech_1","CUP_U_I_RACS_mech_2","CUP_U_I_RACS_WDL_1","CUP_U_I_RACS_WDL_2"];
+        _listOfUniforms append _CUPRACSUniforms;  
+    };		
     
     _randomUniform = _listOfUniforms call bis_fnc_selectRandom; 
     _unit forceaddUniform _randomUniform;
@@ -92,7 +104,13 @@ if (!isNull _unit) then {
     if (_haveHeadgear == 1) then
     {
         _listOfHeadgears = ["H_Bandanna_blu","H_Bandanna_gry","H_Bandanna_khk","H_Bandanna_sgg","H_Bandanna_sand","H_Beret_blk","H_Beret_grn","H_Beret_red","H_Booniehat_dirty","H_Booniehat_grn","H_Booniehat_indp","H_Booniehat_tan","H_Cap_blk","H_Cap_blu","H_Cap_grn","H_Cap_red","H_Cap_surfer","H_Cap_tan","H_Hat_blue","H_Hat_brown","H_Hat_checker","H_Hat_grey","H_Hat_tan","H_StrawHat","H_StrawHat_dark","H_Watchcap_blk","H_Watchcap_khk","H_Watchcap_sgg"];
-	    if (isClass(configFile >> "CfgPatches" >> "rhs_main")) then
+	    
+		if (395180 in (getDLCs 1)) then
+		{
+	        _tanoaHeadgear = ["H_Helmet_Skate","H_Booniehat_tna_F","H_MilCap_ghex_F","H_MilCap_tna_F"];
+	        _listOfHeadgears append _tanoaHeadgear;
+	    };			
+		if (isClass(configFile >> "CfgPatches" >> "rhs_main")) then
 		{
 	        _rhsHeadgear = ["rhs_beanie_green","rhs_beanie","rhs_Booniehat_digi","rhs_Booniehat_flora"];
 	        _listOfHeadgears append _rhsHeadgear;
@@ -157,6 +175,12 @@ if (!isNull _unit) then {
     if (pht6_parameter_enemyMask == 0) then {
         _listOfGlasses = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli"];
     };
+	
+    if (395180 in (getDLCs 1)) then
+	{
+		 _tanoaMasks = ["G_Balaclava_TI_blk_F","G_Balaclava_TI_G_blk_F","G_Balaclava_TI_tna_F","G_Balaclava_TI_G_tna_F"];
+	     _listOfGlasses append _tanoaMasks;
+	};	
     
     if (isClass(configFile >> "CfgPatches" >> "rhsusf_main")) then
 	{
@@ -226,6 +250,24 @@ if (!isNull _unit) then {
     	_listVanillaARs = ["arifle_Katiba_C_F", "arifle_Mk20C_plain_F", "arifle_MXC_F", "arifle_MXC_Black_F", "arifle_SDAR_F", "arifle_TRG21_F", "arifle_TRG20_F"];
         _listOfWeapons append _ListVanillaARs;
     };
+	
+    if (395180 in (getDLCs 1) && pht6_parameter_enemyWeapPistols == 1) then 
+    {
+    	_listTanoaPistols = ["hgun_Pistol_01_F", "hgun_P07_khk_F"];
+        _listOfWeapons append _listTanoaPistols;     
+    };
+	
+    if (395180 in (getDLCs 1) && pht6_parameter_enemyWeapSmgs == 2) then 
+    {
+    	_listTanoaSmgs = ["SMG_05_F"];
+        _listOfWeapons append _listTanoaSmgs;     
+    };
+	
+    if (395180 in (getDLCs 1) && (pht6_parameter_enemyWeapRifles == 1 OR pht6_parameter_enemyWeapRifles == 3)) then 
+    {
+    	_listTanoaRifles = ["arifle_AK12_F","arifle_AKM_F","arifle_AKS_F","arifle_CTAR_blk_F","arifle_MXC_khk_F","arifle_SPAR_01_blk_F","arifle_SPAR_01_khk_F","arifle_SPAR_01_snd_F"];
+        _listOfWeapons append _listTanoaRifles;     
+    };	
     
     if (isClass(configFile >> "CfgPatches" >> "A3_Weapons_F_Mod_SMGs_SMG_03") && pht6_parameter_enemyWeapSmgs == 2) then
     {
@@ -391,6 +433,18 @@ if (!isNull _unit) then {
         _listHLCAR15s = ["hlc_rifle_honeybadger","hlc_rifle_vendimus","hlc_rifle_RU5562","hlc_rifle_RU556","hlc_rifle_bcmjack","hlc_rifle_Bushmaster300","hlc_rifle_Colt727","hlc_rifle_M4","hlc_rifle_CQBR"];
 		_listOfWeapons append _listHLCAR15s;
 	};
+	
+    if (isClass(configFile >> "CfgPatches" >> "FHQ_Weapons") && (pht6_parameter_enemyWeapRifles == 1 OR pht6_parameter_enemyWeapRifles == 3)) then
+	{
+        _listFHQRifles = ["FHQ_arifle_ACR_blk","FHQ_arifle_G36C_black","FHQ_arifle_Galil_black","FHQ_arifle_M4std_short_blk","FHQ_arifle_M4_short_blk"];
+		_listOfWeapons append _listFHQRifles;
+	};
+
+    if (isClass(configFile >> "CfgPatches" >> "FHQ_Weapons") && pht6_parameter_enemyWeapSmgs == 2) then
+	{
+        _listFHQSMGs = ["FHQ_smg_p90_black","FHQ_smg_p90_olive","FHQ_smg_PS90_olive"];
+		_listOfWeapons append _listFHQSMGs;
+	};	
     
 	_randomWeapon = _listOfWeapons call bis_fnc_selectRandom;
 
@@ -469,6 +523,69 @@ if (!isNull _unit) then {
         _unit addPrimaryWeaponItem "acc_flashlight";
         _vest addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag", 6];
     };
+	
+    if (395180 in (getDLCs 1)) then {	
+		if (_randomWeapon == "arifle_CTAR_blk_F") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_580x42_Mag_F";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["30Rnd_580x42_Mag_F", 6];
+		};
+		
+		if (_randomWeapon == "arifle_AK12_F") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_762x39_Mag_F";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["30Rnd_762x39_Mag_F", 6];
+		};
+		
+		if (_randomWeapon == "arifle_AKM_F") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_762x39_Mag_F";
+			_unit addWeaponGlobal _randomWeapon;
+			_vest addMagazineCargoGlobal ["30Rnd_762x39_Mag_F", 6];
+		};	
+
+		if (_randomWeapon == "arifle_MXC_khk_F") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_65x39_caseless_mag";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag", 6];
+		};		
+
+		if (_randomWeapon == "arifle_SPAR_01_blk_F" OR _randomWeapon == "arifle_SPAR_01_khk_F" OR _randomWeapon == "arifle_SPAR_01_snd_F") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_556x45_Stanag";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 6];
+		};
+
+		if (_randomWeapon == "SMG_05_F") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_9x21_Mag_SMG_02";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["30Rnd_9x21_Mag_SMG_02", 7];
+		};	
+		
+		if (_randomWeapon == "hgun_Pistol_01_F") then 
+	    {
+			_unit addMagazineGlobal "10Rnd_9x21_Mag";
+			_unit addWeaponGlobal _randomWeapon;
+			_vest addMagazineCargoGlobal ["10Rnd_9x21_Mag", 8];
+		};			
+
+		if (_randomWeapon == "hgun_P07_khk_F") then 
+	    {
+			_unit addMagazineGlobal "16Rnd_9x21_Mag";
+			_unit addWeaponGlobal _randomWeapon;
+			_vest addMagazineCargoGlobal ["16Rnd_9x21_Mag", 8];
+		};	
+	};
     
     if (isClass(configFile >> "CfgPatches" >> "A3_Weapons_F_Mod_SMGs_SMG_03")) then {
       	if (_randomWeapon == "SMG_03C_black" OR _randomWeapon == "SMG_03C_camo" OR _randomWeapon == "SMG_03C_hex" OR _randomWeapon == "SMG_03C_khaki" OR _randomWeapon == "SMG_03C_TR_black" OR _randomWeapon == "SMG_03C_TR_camo" OR _randomWeapon == "SMG_03C_TR_hex" OR _randomWeapon == "SMG_03C_TR_khaki") then
@@ -1019,6 +1136,40 @@ if (!isNull _unit) then {
 	        _vest addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 6];
 	    };    
     };
+	
+    if (isClass(configFile >> "CfgPatches" >> "FHQ_Weapons")) then {	
+		if (_randomWeapon == "FHQ_arifle_G36C_black" OR _randomWeapon == "FHQ_arifle_M4std_short_blk" OR _randomWeapon == "FHQ_arifle_M4_short_blk") then 
+	    {
+			_unit addMagazineGlobal "30Rnd_556x45_Stanag";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 6];
+		};
+		
+		if (_randomWeapon == "FHQ_arifle_Galil_black") then 
+	    {
+			_unit addMagazineGlobal "FHQ_25Rnd_762x51_Mag";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["FHQ_25Rnd_762x51_Mag", 6];
+		};
+		
+		if (_randomWeapon == "FHQ_arifle_ACR_blk") then 
+	    {
+			_unit addMagazineGlobal "FHQ_rem_30Rnd_680x43_ACR";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["FHQ_rem_30Rnd_680x43_ACR", 6];
+		};	
+
+		if (_randomWeapon == "FHQ_smg_p90_black" OR _randomWeapon == "FHQ_smg_p90_olive" OR _randomWeapon == "FHQ_smg_PS90_olive") then 
+	    {
+			_unit addMagazineGlobal "FHQ_50Rnd_57x28_Mag";
+			_unit addWeaponGlobal _randomWeapon;
+			_unit addPrimaryWeaponItem "acc_flashlight";
+			_vest addMagazineCargoGlobal ["FHQ_50Rnd_57x28_Mag", 5];
+		};		
+	};
     
     /* Assigned items (maps, radios, NV Goggles, etc */
     _unit linkItem "ItemMap";
