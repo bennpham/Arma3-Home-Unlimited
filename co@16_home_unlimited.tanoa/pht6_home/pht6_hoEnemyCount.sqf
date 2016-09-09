@@ -1,0 +1,35 @@
+if (isServer) then {
+	switch (_this select 0) do {
+		case 0: {pht6_parameter_enemyCount = 4};
+ 		case 1: {pht6_parameter_enemyCount = 8};
+  		case 2: {pht6_parameter_enemyCount = 12};
+  		case 3: {pht6_parameter_enemyCount = 16};
+  		case 4: {pht6_parameter_enemyCount = 20};
+        case 5: {pht6_parameter_enemyCount = 24};
+        case 6: {pht6_parameter_enemyCount = 28};
+        case 7: {pht6_parameter_enemyCount = 32};
+        case 8: {pht6_parameter_enemyCount = 36};
+        case 9: {pht6_parameter_enemyCount = 40};
+        case 10: {pht6_parameter_enemyCount = 44};
+        case 11: {pht6_parameter_enemyCount = 48};
+        case 12: {pht6_parameter_enemyCount = 52};
+        case 13: {pht6_parameter_enemyCount = 56};
+        case 14: {pht6_parameter_enemyCount = 60};
+        case 15: {pht6_parameter_enemyCount = 64};
+        case 16: {pht6_parameter_enemyCount = 68};
+        case 17: {pht6_parameter_enemyCount = 72};
+        case 18: {pht6_parameter_enemyCount = 76};
+        case 19: {pht6_parameter_enemyCount = 80};
+        case 20: {pht6_parameter_enemyCount = 84};
+        case 21: {pht6_parameter_enemyCount = 88};
+        case 22: {pht6_parameter_enemyCount = 92};
+        case 23: {pht6_parameter_enemyCount = 96};
+        case 24: {pht6_parameter_enemyCount = 100};
+        case 25: {pht6_parameter_enemyCount = 104};
+        case 26: {pht6_parameter_enemyCount = 108};
+        case 27: {pht6_parameter_enemyCount = 112};
+        case 28: {pht6_parameter_enemyCount = 116};
+        case 29: {pht6_parameter_enemyCount = 120};
+	};
+	true;
+};

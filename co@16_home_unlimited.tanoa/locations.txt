@@ -1,0 +1,30 @@
+B25								location_b25
+Banana Plantation				location_banana_plantation
+Blue Pearl Cargos				location_blue_pearl_cargos
+Blue Pearl Ship					location_blue_pearl_ship
+Cliffs							location_cliffs
+Comms Bravo Peak				location_comms_bravo_peak
+Fortress Ruins					location_fortress_ruins
+G4M								location_g4m
+Georgetown Artillery Site		location_georgetown_small_artillery_site
+Georgetown Bunkers				location_georgetown_bunkers
+Georgetown Office Building		location_georgetown_office_building
+Harcourt Shopping Center		location_harcourt_shopping_center
+Hotel Resort					location_hotel_resort
+Katkoula Pizzaria				location_katkoula_pizzaria
+Kotomo Mountain Fortress		location_kotomo_mountain_fortress
+La Rochelle Artillery Bunker 	location_la_rochelle_artillery_bunker
+Lijnhaven Port Shopping Center	location_lijnhaven_port_shopping
+Liquor Town						location_liquor_town
+Northwest Artillery Base		location_northwest_artillery_base
+Plantation						location_plantation
+Railroad Hobos					location_railroad_hobos
+Saint Julien Bunker				location_saint_julien_bunker
+Southern Ruins					location_southern_ruins
+Southwest Caves					location_southwest_cave
+Tanoa Sugar Company				location_tanoa_sugar_company
+Tanouka Mansion					location_tanouka_mansion
+Tavu Beach Bunkers				location_tavu_beach_bunker
+Tavu Bunkers					location_tavu_bunkers
+Tuvanaka						location_tuvanaka
+Western Islands Bunker			location_western_island_bunker
