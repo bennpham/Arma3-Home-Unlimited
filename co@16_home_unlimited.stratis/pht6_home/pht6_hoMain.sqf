@@ -234,5 +234,15 @@ if (isServer) then {
 
 	waitUntil { time > 10 };
 	{_x allowDamage true} forEach _ALLPLAYERUNITS;
+	{zeus_mod1 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod2 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod3 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod4 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod5 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod6 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod7 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod8 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod9 addCuratorEditableObjects [[_x],true]} forEach allUnits;
+	{zeus_mod10 addCuratorEditableObjects [[_x],true]} forEach allUnits;
 	
 }; 
